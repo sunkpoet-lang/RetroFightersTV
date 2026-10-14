@@ -179,62 +179,124 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
   .focos, .letrero h1, .ranura, .buscar span { animation: none; }
   .reta, .reta:hover, .boton.cafe:hover, .tablero a:hover { transition: none; transform: none; }
 }
+
+/* Selector de idioma */
+.idiomas { display: flex; justify-content: flex-end; gap: 6px; margin-bottom: 12px; }
+.idiomas button { font: 9px/1 var(--pixel); color: var(--tenue); background: #0d062099; border: 2px solid var(--borde); border-radius: 5px; padding: 8px 9px; cursor: pointer; }
+.idiomas button:hover { color: var(--texto); border-color: var(--violeta); }
+.idiomas button[aria-pressed="true"] { color: var(--noche); background: var(--cian); border-color: var(--cian); box-shadow: 0 0 12px #2de2e677; }
 </style>
 </head>
 <body>
 <div class="marco">
+  <nav class="idiomas" id="idiomas" aria-label="Idioma / Language">
+    <button data-i="es" lang="es" title="Español">ES</button>
+    <button data-i="en" lang="en" title="English">EN</button>
+    <button data-i="pt" lang="pt" title="Português">PT</button>
+    <button data-i="fr" lang="fr" title="Français">FR</button>
+  </nav>
   <header class="letrero">
     <span class="focos a" aria-hidden="true"></span>
     <h1>RETRO<span>FIGHTERS</span>TV</h1>
-    <p class="lema">RETAS DE FIGHTCADE · PURO ARCADE</p>
+    <p class="lema" data-t="lema">RETAS DE FIGHTCADE · PURO ARCADE</p>
     <div class="creditos">
-      <span><b id="c-retas">0</b> RETAS</span>
-      <span><b id="c-juegos">0</b> JUEGOS</span>
-      <span><b id="c-jug">0</b> JUGADORES</span>
+      <span><b id="c-retas">0</b> <span data-t="retas">RETAS</span></span>
+      <span><b id="c-juegos">0</b> <span data-t="juegos">JUEGOS</span></span>
+      <span><b id="c-jug">0</b> <span data-t="jugadores">JUGADORES</span></span>
     </div>
     <div class="botones">
-      <a class="boton canal" href="https://www.youtube.com/@RetroFightersTV-zp2wy?sub_confirmation=1" target="_blank" rel="noopener">▶ VER EL CANAL</a>
+      <a class="boton canal" href="https://www.youtube.com/@RetroFightersTV-zp2wy?sub_confirmation=1" target="_blank" rel="noopener">▶ <span data-t="canal">VER EL CANAL</span></a>
       <a class="boton cafe" href="https://buymeacoffee.com/dannybarreto" target="_blank" rel="noopener"><span class="ranura" aria-hidden="true"></span> INSERT COIN · BUY ME A COFFEE</a>
     </div>
     <span class="focos b" aria-hidden="true"></span>
   </header>
 
-  <h2 id="t-juegos">Selecciona juego</h2>
+  <h2 id="t-juegos" data-t="elige">Selecciona juego</h2>
   <div class="juegos" id="juegos" role="group" aria-labelledby="t-juegos"></div>
 
   <div class="barra">
     <label class="buscar" for="buscar"><span aria-hidden="true">&gt;</span>
       <input id="buscar" type="search" placeholder="Jugador, personaje, juego o ID del replay" autocomplete="off"></label>
-    <label class="por" for="por">Mostrar <select id="por"><option>12</option><option>24</option><option>48</option></select> por página</label>
+    <label class="por" for="por"><span data-t="mostrar">Mostrar</span> <select id="por"><option>12</option><option>24</option><option>48</option></select> <span data-t="porpagina">por página</span></label>
   </div>
 
   <div class="cuenta" id="cuenta" aria-live="polite"></div>
-  <div class="pared" id="pared"><div class="vacio">CARGANDO RETAS...</div></div>
+  <div class="pared" id="pared"><div class="vacio">...</div></div>
   <div class="paginas" id="paginas" hidden><button id="ant">&lt; ANT</button><span id="pag"></span><button id="sig">SIG &gt;</button></div>
 
-  <section class="apoyo" aria-label="Apoya el canal">
-    <p><b>¿Te gustan las retas?</b> Grabar, armar y subir cada video lleva horas de máquina. Si quieres ayudar a que el canal siga creciendo, una moneda en la ranura se agradece mucho.</p>
+  <section class="apoyo">
+    <p id="apoyo"></p>
     <a class="boton cafe" href="https://buymeacoffee.com/dannybarreto" target="_blank" rel="noopener"><span class="ranura" aria-hidden="true"></span> BUY ME A COFFEE</a>
   </section>
 
   <footer>
-    <span>Canal: <a href="https://www.youtube.com/@RetroFightersTV-zp2wy" target="_blank" rel="noopener">youtube.com/@RetroFightersTV</a></span>
+    <span><span data-t="pie_canal">Canal</span>: <a href="https://www.youtube.com/@RetroFightersTV-zp2wy" target="_blank" rel="noopener">youtube.com/@RetroFightersTV</a></span>
     <span id="actualizado"></span>
-    <span>Replays grabados de Fightcade. Los juegos y sus personajes pertenecen a sus dueños.</span>
+    <span data-t="pie_aviso">Replays grabados de Fightcade. Los juegos y sus personajes pertenecen a sus dueños.</span>
   </footer>
 </div>
 <div class="piso" aria-hidden="true"></div>
 
 <script>
+/* Textos por idioma. Las claves en MAYUSCULAS se pintan con la fuente pixel, que no tiene acentos:
+   por eso esas frases se escriben sin ellos en todos los idiomas. */
+const T = {
+  es: { lema: "RETAS DE FIGHTCADE · PURO ARCADE", retas: "RETAS", reta1: "RETA", juegos: "JUEGOS", jugadores: "JUGADORES",
+        canal: "VER EL CANAL", elige: "SELECCIONA JUEGO", ant: "< ANT", sig: "SIG >", cargando: "CARGANDO RETAS...",
+        nada: "NINGUNA RETA COINCIDE<br>PRUEBA CON OTRO JUGADOR O JUEGO", vacio: "SIN RETAS PUBLICADAS POR AHORA",
+        error: "NO SE PUDIERON CARGAR LAS RETAS<br>RECARGA EN UN MOMENTO",
+        todos: "Todos", buscar: "Jugador, personaje, juego o ID del replay", mostrar: "Mostrar", porpagina: "por página",
+        ver: "Ver la reta", corto: "Corto", rango: "Rango", idreplay: "ID del replay", contra: "contra", veryt: "Ver en YouTube",
+        apoyo: "<b>¿Te gustan las retas?</b> Grabar, armar y subir cada video lleva horas de máquina. Si quieres ayudar a que el canal siga creciendo, una moneda en la ranura se agradece mucho.",
+        pie_canal: "Canal", actualizado: "Actualizado", fecha: "es-MX",
+        pie_aviso: "Replays grabados de Fightcade. Los juegos y sus personajes pertenecen a sus dueños.",
+        titulo: "RetroFightersTV · Retas de Fightcade" },
+  en: { lema: "FIGHTCADE SETS · PURE ARCADE", retas: "SETS", reta1: "SET", juegos: "GAMES", jugadores: "PLAYERS",
+        canal: "VISIT THE CHANNEL", elige: "SELECT GAME", ant: "< PREV", sig: "NEXT >", cargando: "LOADING SETS...",
+        nada: "NO SETS MATCH<br>TRY ANOTHER PLAYER OR GAME", vacio: "NO SETS PUBLISHED YET",
+        error: "COULD NOT LOAD THE SETS<br>RELOAD IN A MOMENT",
+        todos: "All", buscar: "Player, character, game or replay ID", mostrar: "Show", porpagina: "per page",
+        ver: "Watch the set", corto: "Short", rango: "Rank", idreplay: "Replay ID", contra: "versus", veryt: "Watch on YouTube",
+        apoyo: "<b>Enjoying the sets?</b> Recording, building and uploading every video takes hours of machine time. If you want to help the channel keep growing, a coin in the slot is much appreciated.",
+        pie_canal: "Channel", actualizado: "Updated", fecha: "en-US",
+        pie_aviso: "Replays recorded from Fightcade. The games and their characters belong to their owners.",
+        titulo: "RetroFightersTV · Fightcade sets" },
+  pt: { lema: "LUTAS DO FIGHTCADE · PURO ARCADE", retas: "LUTAS", reta1: "LUTA", juegos: "JOGOS", jugadores: "JOGADORES",
+        canal: "VER O CANAL", elige: "ESCOLHA O JOGO", ant: "< ANT", sig: "SEG >", cargando: "CARREGANDO LUTAS...",
+        nada: "NENHUMA LUTA ENCONTRADA<br>TENTE OUTRO JOGADOR OU JOGO", vacio: "NENHUMA LUTA PUBLICADA POR ENQUANTO",
+        error: "ERRO AO CARREGAR AS LUTAS<br>RECARREGUE EM INSTANTES",
+        todos: "Todos", buscar: "Jogador, personagem, jogo ou ID do replay", mostrar: "Mostrar", porpagina: "por página",
+        ver: "Ver a luta", corto: "Short", rango: "Rank", idreplay: "ID do replay", contra: "contra", veryt: "Ver no YouTube",
+        apoyo: "<b>Curtiu as lutas?</b> Gravar, montar e enviar cada vídeo leva horas de máquina. Se quiser ajudar o canal a continuar crescendo, uma ficha na máquina é muito bem-vinda.",
+        pie_canal: "Canal", actualizado: "Atualizado", fecha: "pt-BR",
+        pie_aviso: "Replays gravados do Fightcade. Os jogos e seus personagens pertencem aos seus donos.",
+        titulo: "RetroFightersTV · Lutas do Fightcade" },
+  fr: { lema: "MATCHS FIGHTCADE · PUR ARCADE", retas: "MATCHS", reta1: "MATCH", juegos: "JEUX", jugadores: "JOUEURS",
+        canal: "VOIR SUR YOUTUBE", elige: "CHOISIS TON JEU", ant: "< RETOUR", sig: "SUITE >", cargando: "CHARGEMENT...",
+        nada: "AUCUN MATCH NE CORRESPOND<br>ESSAIE UN AUTRE JOUEUR OU JEU", vacio: "PAS ENCORE DE MATCHS",
+        error: "ERREUR DE CHARGEMENT<br>RECHARGE LA PAGE DANS UN INSTANT",
+        todos: "Tous", buscar: "Joueur, personnage, jeu ou ID du replay", mostrar: "Afficher", porpagina: "par page",
+        ver: "Voir le match", corto: "Short", rango: "Rang", idreplay: "ID du replay", contra: "contre", veryt: "Voir sur YouTube",
+        apoyo: "<b>Tu aimes ces matchs ?</b> Enregistrer, monter et mettre en ligne chaque vidéo demande des heures de machine. Si tu veux aider la chaîne à grandir, une pièce dans la fente est très appréciée.",
+        pie_canal: "Chaîne", actualizado: "Mis à jour", fecha: "fr-FR",
+        pie_aviso: "Replays enregistrés sur Fightcade. Les jeux et leurs personnages appartiennent à leurs propriétaires.",
+        titulo: "RetroFightersTV · Matchs Fightcade" }
+};
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;" }[c]));
 const dur = s => { s = Math.round(s); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); };
-let RETAS = [], juego = "", pagina = 1;
+const guardado = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
+const consulta = new URLSearchParams(location.search);
+let RETAS = [], DATOS = null, fallo = false, juego = "", pagina = 1;
+// Idioma: el elegido antes, luego ?lang=, luego el del navegador; si no es ninguno de los cuatro, espanol
+let idioma = [consulta.get("lang"), guardado("idioma"), ...(navigator.languages || [navigator.language || ""])]
+  .map(x => String(x || "").slice(0, 2).toLowerCase()).find(x => T[x]) || "es";
+const t = k => T[idioma][k];
 
 function jugador(r, p, clase) {
   const pais = r[p + "pais"], rango = r[p + "rango"], pj = r[p + "pj"];
   const extra = [pais ? `<img src="banderas/${esc(pais.toLowerCase())}.png" alt="${esc(pais)}" title="${esc(pais)}" onerror="this.remove()">` : "",
-                 rango ? `<span class="rango r${esc(rango)}" title="Rango ${esc(rango)}">${esc(rango)}</span>` : "",
+                 rango ? `<span class="rango r${esc(rango)}" title="${t("rango")} ${esc(rango)}">${esc(rango)}</span>` : "",
                  pj ? `<span>${esc(pj)}</span>` : ""].filter(Boolean);
   return `<div class="jug ${clase}"><strong>${esc(r[p])}</strong>${extra.length ? `<div class="datos">${clase ? extra.reverse().join("") : extra.join("")}</div>` : ""}</div>`;
 }
@@ -243,56 +305,69 @@ function tarjeta(r) {
   const video = `https://youtu.be/${esc(r.yt)}`;
   return `<article class="reta">
     <div class="marq">${esc(r.juego)}</div>
-    <a class="pantalla" href="${video}" target="_blank" rel="noopener" aria-label="Ver en YouTube: ${esc(r.p1)} contra ${esc(r.p2)}">
+    <a class="pantalla" href="${video}" target="_blank" rel="noopener" aria-label="${t("veryt")}: ${esc(r.p1)} ${t("contra")} ${esc(r.p2)}">
       <img src="mini/${esc(r.id)}.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${esc(r.yt)}/mqdefault.jpg'">
       ${r.ft ? `<span class="formato">${esc(r.ft)}</span>` : ""}<span class="duracion">${dur(r.dur)}</span></a>
     <div class="ficha">
       <div class="duelo">${jugador(r, "p1", "")}<span class="vs">VS</span>${jugador(r, "p2", "d")}</div>
-      <code class="info" title="ID del replay">${esc(r.id)}</code>
+      <code class="info" title="${t("idreplay")}">${esc(r.id)}</code>
     </div>
     <div class="tablero"><span class="palanca" aria-hidden="true"></span>
-      <a class="ver" href="${video}" target="_blank" rel="noopener">Ver la reta</a>
-      ${r.corto ? `<a class="corto" href="https://youtube.com/shorts/${esc(r.corto)}" target="_blank" rel="noopener">Corto</a>` : ""}</div>
+      <a class="ver" href="${video}" target="_blank" rel="noopener">${t("ver")}</a>
+      ${r.corto ? `<a class="corto" href="https://youtube.com/shorts/${esc(r.corto)}" target="_blank" rel="noopener">${t("corto")}</a>` : ""}</div>
     </article>`;
 }
 
 function pintar() {
+  if (!DATOS) { $("pared").innerHTML = `<div class="vacio">${t(fallo ? "error" : "cargando")}</div>`; return; }
   const palabras = $("buscar").value.toLowerCase().split(/\s+/).filter(Boolean);
   const lista = RETAS.filter(r => (!juego || r.juego === juego) &&
     palabras.every(p => [r.juego, r.p1, r.p2, r.p1pj, r.p2pj, r.id].join(" ").toLowerCase().includes(p)));
   const por = +$("por").value, paginas = Math.max(1, Math.ceil(lista.length / por));
   pagina = Math.min(Math.max(1, pagina), paginas);
   $("pared").innerHTML = lista.length ? lista.slice((pagina - 1) * por, pagina * por).map(tarjeta).join("")
-    : `<div class="vacio">${RETAS.length ? "NINGUNA RETA COINCIDE<br>PRUEBA CON OTRO JUGADOR O JUEGO" : "SIN RETAS PUBLICADAS POR AHORA"}</div>`;
-  $("cuenta").innerHTML = `<b>${lista.length}</b> ${lista.length === 1 ? "RETA" : "RETAS"}`;
+    : `<div class="vacio">${t(RETAS.length ? "nada" : "vacio")}</div>`;
+  $("cuenta").innerHTML = `<b>${lista.length}</b> ${t(lista.length === 1 ? "reta1" : "retas")}`;
   $("paginas").hidden = paginas < 2;
   $("pag").textContent = pagina + " / " + paginas;
   $("ant").disabled = pagina <= 1; $("sig").disabled = pagina >= paginas;
 }
 
-function iniciar(datos) {
-  RETAS = (datos.retas || []).filter(r => r.yt);
+// Pone todos los textos fijos en el idioma elegido y vuelve a pintar las retas
+function traducir() {
+  document.documentElement.lang = idioma;
+  document.title = t("titulo");
+  document.querySelectorAll("[data-t]").forEach(e => e.textContent = t(e.dataset.t));
+  document.querySelectorAll("#idiomas button").forEach(b => b.setAttribute("aria-pressed", b.dataset.i === idioma));
+  $("buscar").placeholder = t("buscar");
+  $("apoyo").innerHTML = t("apoyo");
+  $("ant").textContent = t("ant"); $("sig").textContent = t("sig");
   const conteo = {};
   RETAS.forEach(r => conteo[r.juego] = (conteo[r.juego] || 0) + 1);
-  $("juegos").innerHTML = `<button class="juego" data-j="" aria-pressed="true">Todos <small>${RETAS.length}</small></button>` +
-    Object.keys(conteo).sort().map(j => `<button class="juego" data-j="${esc(j)}" aria-pressed="false">${esc(j)} <small>${conteo[j]}</small></button>`).join("");
+  $("juegos").innerHTML = `<button class="juego" data-j="" aria-pressed="${!juego}">${t("todos")} <small>${RETAS.length}</small></button>` +
+    Object.keys(conteo).sort().map(j => `<button class="juego" data-j="${esc(j)}" aria-pressed="${j === juego}">${esc(j)} <small>${conteo[j]}</small></button>`).join("");
   $("c-retas").textContent = RETAS.length;
   $("c-juegos").textContent = Object.keys(conteo).length;
   $("c-jug").textContent = new Set(RETAS.flatMap(r => [r.p1, r.p2])).size;
-  if (datos.actualizado) $("actualizado").textContent = "Actualizado: " + new Date(datos.actualizado * 1000).toLocaleDateString("es-MX", { day: "numeric", month: "long", year: "numeric" });
+  $("actualizado").textContent = DATOS && DATOS.actualizado ? t("actualizado") + ": " +
+    new Date(DATOS.actualizado * 1000).toLocaleDateString(t("fecha"), { day: "numeric", month: "long", year: "numeric" }) : "";
   pintar();
 }
 
+$("idiomas").onclick = e => { const b = e.target.closest("button"); if (!b) return; idioma = b.dataset.i;
+  try { localStorage.setItem("idioma", idioma); } catch (x) {} traducir(); };
 $("juegos").onclick = e => { const b = e.target.closest(".juego"); if (!b) return; juego = b.dataset.j; pagina = 1;
   document.querySelectorAll(".juego").forEach(x => x.setAttribute("aria-pressed", x === b)); pintar(); };
 $("buscar").oninput = () => { pagina = 1; pintar(); };
 $("por").onchange = () => { pagina = 1; pintar(); };
 $("ant").onclick = () => { pagina--; pintar(); $("t-juegos").scrollIntoView(); };
 $("sig").onclick = () => { pagina++; pintar(); $("t-juegos").scrollIntoView(); };
-$("buscar").value = new URLSearchParams(location.search).get("q") || "";   // enlace directo: ?q=jugador
+$("buscar").value = consulta.get("q") || "";   // enlace directo: ?q=jugador  (y ?lang=en|es|pt|fr)
 
-fetch("datos.json?" + Date.now()).then(r => r.json()).then(iniciar)
-  .catch(() => { $("pared").innerHTML = `<div class="vacio">NO SE PUDIERON CARGAR LAS RETAS<br>RECARGA EN UN MOMENTO</div>`; });
+traducir();
+fetch("datos.json?" + Date.now()).then(r => r.json())
+  .then(d => { DATOS = d; RETAS = (d.retas || []).filter(r => r.yt); traducir(); })
+  .catch(() => { fallo = true; pintar(); });
 </script>
 </body>
 </html>
