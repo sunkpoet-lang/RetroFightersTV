@@ -1,6 +1,23 @@
 {
- "actualizado": 1791939138,
+ "actualizado": 1791940938,
  "retas": [
+  {
+   "id": "1791650427338-3252",
+   "juego": "Super Street Fighter II X",
+   "p1": "stevetren",
+   "p2": "Fromo",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "Ryu",
+   "p2pj": "Blanka",
+   "ft": "FT5",
+   "dur": 502,
+   "yt": "vT_qejMZzlw",
+   "corto": "yXGBBDLFMYk",
+   "subido": 1791940403
+  },
   {
    "id": "1791595862365-7836",
    "juego": "Ultimate Mortal Kombat 3",
