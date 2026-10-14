@@ -1,6 +1,40 @@
 {
- "actualizado": 1792014738,
+ "actualizado": 1792016539,
  "retas": [
+  {
+   "id": "1792001168580-6797",
+   "juego": "Super Street Fighter II X",
+   "p1": "Cone of Cold",
+   "p2": "djfrijoles",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "US",
+   "p2pais": "MX",
+   "p1pj": "Ryu",
+   "p2pj": "T.Hawk",
+   "ft": "FT3",
+   "dur": 215,
+   "yt": "kuE-bsBVa9g",
+   "corto": "WA097TTT8Ck",
+   "subido": 1792016173
+  },
+  {
+   "id": "1791996024952-8299",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "ghusek",
+   "p2": "bignasty_3620",
+   "p1rango": "B",
+   "p2rango": "S",
+   "p1pais": "CA",
+   "p2pais": "US",
+   "p1pj": "Chun-Li",
+   "p2pj": "Urien",
+   "ft": "FT3",
+   "dur": 280,
+   "yt": "IKsOlvtAPaY",
+   "corto": "As125_02RCY",
+   "subido": 1792016142
+  },
   {
    "id": "1781047245595-2077",
    "juego": "Super Street Fighter II X",
