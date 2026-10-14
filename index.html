@@ -76,6 +76,11 @@ img { max-width: 100%; }
 /* Botones de neon y la ranura de monedas */
 .boton { font: 10px/1.4 var(--pixel); text-decoration: none; border-radius: 6px; padding: 12px 14px; border: 2px solid; display: inline-flex; gap: 10px; align-items: center; }
 .boton.canal { color: var(--cian); border-color: var(--cian); background: #2de2e612; box-shadow: 0 0 14px #2de2e655, inset 0 0 12px #2de2e622; text-shadow: 0 0 8px #2de2e6aa; }
+.boton.pedir { color: #fff; border-color: #ffd0e6; background: linear-gradient(180deg, #ff7ab8 0, var(--rosa) 55%, #c4105f 100%);
+  font-size: 12px; padding: 14px 18px; text-shadow: 0 1px 0 #7a0838; box-shadow: 0 4px 0 #7a0838, 0 0 24px #ff2e88aa; animation: latido 1.8s ease-in-out infinite; }
+.boton.pedir:hover { transform: translateY(2px); box-shadow: 0 2px 0 #7a0838, 0 0 34px #ff2e88dd; }
+@keyframes latido { 50% { box-shadow: 0 4px 0 #7a0838, 0 0 40px #ff2e88, 0 0 70px #ff2e8866; } }
+.nota-pedir { margin: 12px 0 0; font-size: 13px; color: var(--tenue); }
 .boton.canal:hover { background: var(--cian); color: var(--noche); text-shadow: none; }
 .boton.cafe { color: #2a1600; border-color: #fff0b8; background: linear-gradient(180deg, #ffe07a 0, var(--ambar) 55%, #e09a12 100%);
   box-shadow: 0 4px 0 #8a5a06, 0 0 22px #ffc93c88; }
@@ -176,8 +181,8 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
     repeating-conic-gradient(#3a1c7c 0 25%, #150830 0 50%) 0 0 / 120px 120px; }
 
 @media (prefers-reduced-motion: reduce) {
-  .focos, .letrero h1, .ranura, .buscar span { animation: none; }
-  .reta, .reta:hover, .boton.cafe:hover, .tablero a:hover { transition: none; transform: none; }
+  .focos, .letrero h1, .ranura, .buscar span, .boton.pedir { animation: none; }
+  .reta, .reta:hover, .boton.cafe:hover, .boton.pedir:hover, .tablero a:hover { transition: none; transform: none; }
 }
 
 /* Selector de idioma */
@@ -205,9 +210,11 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
       <span><b id="c-jug">0</b> <span data-t="jugadores">JUGADORES</span></span>
     </div>
     <div class="botones">
+      <a class="boton pedir" href="https://t.me/RetrofightersRetabot" target="_blank" rel="noopener">🎮 <span data-t="pedir">PIDE TU RETA</span></a>
       <a class="boton canal" href="https://www.youtube.com/channel/UC9sBM8rceAKacjTyjvFkeUQ?sub_confirmation=1" target="_blank" rel="noopener">▶ <span data-t="canal">VER EL CANAL</span></a>
       <a class="boton cafe" href="https://buymeacoffee.com/dannybarreto" target="_blank" rel="noopener"><span class="ranura" aria-hidden="true"></span> INSERT COIN · BUY ME A COFFEE</a>
     </div>
+    <p class="nota-pedir" data-t="nota_pedir">Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse.</p>
     <span class="focos b" aria-hidden="true"></span>
   </header>
 
@@ -241,7 +248,8 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
 /* Textos por idioma. Las claves en MAYUSCULAS se pintan con la fuente pixel, que no tiene acentos:
    por eso esas frases se escriben sin ellos en todos los idiomas. */
 const T = {
-  es: { lema: "RETAS DE FIGHTCADE · PURO ARCADE", retas: "RETAS", reta1: "RETA", juegos: "JUEGOS", jugadores: "JUGADORES",
+  es: { pedir: "PIDE TU RETA", nota_pedir: "Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse.",
+        lema: "RETAS DE FIGHTCADE · PURO ARCADE", retas: "RETAS", reta1: "RETA", juegos: "JUEGOS", jugadores: "JUGADORES",
         canal: "VER EL CANAL", elige: "SELECCIONA JUEGO", ant: "< ANT", sig: "SIG >", cargando: "CARGANDO RETAS...",
         nada: "NINGUNA RETA COINCIDE<br>PRUEBA CON OTRO JUGADOR O JUEGO", vacio: "SIN RETAS PUBLICADAS POR AHORA",
         error: "NO SE PUDIERON CARGAR LAS RETAS<br>RECARGA EN UN MOMENTO",
@@ -251,7 +259,8 @@ const T = {
         pie_canal: "Canal", actualizado: "Actualizado", fecha: "es-MX",
         pie_aviso: "Replays grabados de Fightcade. Los juegos y sus personajes pertenecen a sus dueños.",
         titulo: "RetroFightersTV · Retas de Fightcade" },
-  en: { lema: "FIGHTCADE SETS · PURE ARCADE", retas: "SETS", reta1: "SET", juegos: "GAMES", jugadores: "PLAYERS",
+  en: { pedir: "REQUEST YOUR SET", nota_pedir: "Send your Fightcade replay to RetaBot on Telegram. An admin reviews every video before it goes live.",
+        lema: "FIGHTCADE SETS · PURE ARCADE", retas: "SETS", reta1: "SET", juegos: "GAMES", jugadores: "PLAYERS",
         canal: "VISIT THE CHANNEL", elige: "SELECT GAME", ant: "< PREV", sig: "NEXT >", cargando: "LOADING SETS...",
         nada: "NO SETS MATCH<br>TRY ANOTHER PLAYER OR GAME", vacio: "NO SETS PUBLISHED YET",
         error: "COULD NOT LOAD THE SETS<br>RELOAD IN A MOMENT",
@@ -261,7 +270,8 @@ const T = {
         pie_canal: "Channel", actualizado: "Updated", fecha: "en-US",
         pie_aviso: "Replays recorded from Fightcade. The games and their characters belong to their owners.",
         titulo: "RetroFightersTV · Fightcade sets" },
-  pt: { lema: "LUTAS DO FIGHTCADE · PURO ARCADE", retas: "LUTAS", reta1: "LUTA", juegos: "JOGOS", jugadores: "JOGADORES",
+  pt: { pedir: "PEDIR UMA LUTA", nota_pedir: "Envie seu replay do Fightcade para o RetaBot no Telegram. Cada vídeo é revisado pelo admin antes de ser publicado.",
+        lema: "LUTAS DO FIGHTCADE · PURO ARCADE", retas: "LUTAS", reta1: "LUTA", juegos: "JOGOS", jugadores: "JOGADORES",
         canal: "VER O CANAL", elige: "ESCOLHA O JOGO", ant: "< ANT", sig: "SEG >", cargando: "CARREGANDO LUTAS...",
         nada: "NENHUMA LUTA ENCONTRADA<br>TENTE OUTRO JOGADOR OU JOGO", vacio: "NENHUMA LUTA PUBLICADA POR ENQUANTO",
         error: "ERRO AO CARREGAR AS LUTAS<br>RECARREGUE EM INSTANTES",
@@ -271,7 +281,8 @@ const T = {
         pie_canal: "Canal", actualizado: "Atualizado", fecha: "pt-BR",
         pie_aviso: "Replays gravados do Fightcade. Os jogos e seus personagens pertencem aos seus donos.",
         titulo: "RetroFightersTV · Lutas do Fightcade" },
-  fr: { lema: "MATCHS FIGHTCADE · PUR ARCADE", retas: "MATCHS", reta1: "MATCH", juegos: "JEUX", jugadores: "JOUEURS",
+  fr: { pedir: "DEMANDE TON MATCH", nota_pedir: "Envoie ton replay Fightcade à RetaBot sur Telegram. Chaque vidéo est vérifiée par l'admin avant publication.",
+        lema: "MATCHS FIGHTCADE · PUR ARCADE", retas: "MATCHS", reta1: "MATCH", juegos: "JEUX", jugadores: "JOUEURS",
         canal: "VOIR SUR YOUTUBE", elige: "CHOISIS TON JEU", ant: "< RETOUR", sig: "SUITE >", cargando: "CHARGEMENT...",
         nada: "AUCUN MATCH NE CORRESPOND<br>ESSAIE UN AUTRE JOUEUR OU JEU", vacio: "PAS ENCORE DE MATCHS",
         error: "ERREUR DE CHARGEMENT<br>RECHARGE LA PAGE DANS UN INSTANT",
