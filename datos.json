@@ -1,6 +1,40 @@
 {
- "actualizado": 1792016539,
+ "actualizado": 1792019239,
  "retas": [
+  {
+   "id": "1792004673222-9985",
+   "juego": "Super Street Fighter II X",
+   "p1": "hassasin10",
+   "p2": "MrGA II",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "MX",
+   "p1pj": "Cammy",
+   "p2pj": "Ryu",
+   "ft": "FT5",
+   "dur": 701,
+   "yt": "odGRt1KPccQ",
+   "corto": "p-bIDzugjkI",
+   "subido": 1792018584
+  },
+  {
+   "id": "1791857575615-3609",
+   "juego": "Super Street Fighter II X",
+   "p1": "djfrijoles",
+   "p2": "RenoMD",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Ken",
+   "p2pj": "M.Bison (Dictator)",
+   "ft": "FT5",
+   "dur": 549,
+   "yt": "SsD49utRLS8",
+   "corto": "ir_VkHfcsDg",
+   "subido": 1792018501
+  },
   {
    "id": "1792001168580-6797",
    "juego": "Super Street Fighter II X",
