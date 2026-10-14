@@ -1,6 +1,23 @@
 {
- "actualizado": 1791945438,
+ "actualizado": 1791946338,
  "retas": [
+  {
+   "id": "1791926958922-5794",
+   "juego": "Street Fighter II Hyper Fighting",
+   "p1": "KnockTsuKow",
+   "p2": "ChoiBoy",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT3",
+   "dur": 236,
+   "yt": "Sf8DZdJbIwE",
+   "corto": "-kdiHqksWho",
+   "subido": 1791945735
+  },
   {
    "id": "1791463619288-7899",
    "juego": "The King of Fighters '98",
