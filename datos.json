@@ -1,6 +1,23 @@
 {
- "actualizado": 1791935538,
+ "actualizado": 1791937338,
  "retas": [
+  {
+   "id": "1790912849189-4775",
+   "juego": "Super Street Fighter II X",
+   "p1": "Zombie_Damage",
+   "p2": "RenoMD",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "Fei Long",
+   "p2pj": "M.Bison (Dictator)",
+   "ft": "FT5",
+   "dur": 785,
+   "yt": "xwbCngtYOHc",
+   "corto": "OeikxcbWT1w",
+   "subido": 1791936655
+  },
   {
    "id": "1791858775610-1626",
    "juego": "Marvel vs. Capcom 2",
