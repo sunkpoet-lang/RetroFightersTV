@@ -1,6 +1,23 @@
 {
- "actualizado": 1791941840,
+ "actualizado": 1791945438,
  "retas": [
+  {
+   "id": "1791463619288-7899",
+   "juego": "The King of Fighters '98",
+   "p1": "YeopMun",
+   "p2": "KOF-Tang",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "KR",
+   "p2pais": "CN",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 1750,
+   "yt": "aERfyrEkst8",
+   "corto": "awP-jBVztkA",
+   "subido": 1791944964
+  },
   {
    "id": "1790221650215-9792",
    "juego": "Capcom vs. SNK 2",
