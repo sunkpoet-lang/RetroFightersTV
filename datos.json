@@ -1,6 +1,23 @@
 {
- "actualizado": 1792020139,
+ "actualizado": 1792021039,
  "retas": [
+  {
+   "id": "1792005612692-1592",
+   "juego": "Super Street Fighter II X",
+   "p1": "djfrijoles",
+   "p2": "YesAffinity",
+   "p1rango": "B",
+   "p2rango": "C",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "T.Hawk",
+   "p2pj": "Zangief",
+   "ft": "FT5",
+   "dur": 368,
+   "yt": "ZPAIGYx7qpY",
+   "corto": "ZKrkPGP06vk",
+   "subido": 1792020344
+  },
   {
    "id": "1792002868032-4601",
    "juego": "Super Street Fighter II X",
