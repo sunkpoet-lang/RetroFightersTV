@@ -1,6 +1,40 @@
 {
- "actualizado": 1791946338,
+ "actualizado": 1791958938,
  "retas": [
+  {
+   "id": "1791736026710-8734",
+   "juego": "Super Street Fighter II X",
+   "p1": "Oggok",
+   "p2": "MegamanX-8",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "FR",
+   "p2pais": "US",
+   "p1pj": "Ryu",
+   "p2pj": "Zangief",
+   "ft": "FT5",
+   "dur": 681,
+   "yt": "SrMo8AzDnNI",
+   "corto": "fJYPWXqhHoI",
+   "subido": 1791958786
+  },
+  {
+   "id": "1791428798648-8726",
+   "juego": "The King of Fighters 2002 Plus",
+   "p1": "[SKM] KUNO",
+   "p2": "IRK-ZR-ALCOHOL OFER",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "MX",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 1562,
+   "yt": "QCqDp7XhLok",
+   "corto": "rWRhVMFQK0I",
+   "subido": 1791958716
+  },
   {
    "id": "1791926958922-5794",
    "juego": "Street Fighter II Hyper Fighting",
