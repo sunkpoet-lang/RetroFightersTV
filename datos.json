@@ -1,6 +1,23 @@
 {
- "actualizado": 1791967940,
+ "actualizado": 1791994941,
  "retas": [
+  {
+   "id": "1791667451305-4305",
+   "juego": "The King of Fighters '96",
+   "p1": "MK-Yuyin",
+   "p2": "DRF-KARDIADEESCORPIO",
+   "p1rango": "C",
+   "p2rango": "B",
+   "p1pais": "CL",
+   "p2pais": "CL",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT3",
+   "dur": 500,
+   "yt": "lHhM7sKZPT4",
+   "corto": "2KwfY8GIUtk",
+   "subido": 1791994594
+  },
   {
    "id": "1791782257194-1068",
    "juego": "Street Fighter Alpha 3",
