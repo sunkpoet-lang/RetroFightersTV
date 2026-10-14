@@ -1,6 +1,23 @@
 {
- "actualizado": 1792005741,
+ "actualizado": 1792007541,
  "retas": [
+  {
+   "id": "1785281081621-1907",
+   "juego": "Super Street Fighter II X",
+   "p1": "H-Zero",
+   "p2": "FabsGtz",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "MX",
+   "p1pj": "Ken",
+   "p2pj": "Blanka",
+   "ft": "FT5",
+   "dur": 1056,
+   "yt": "Yz-wbOPOTfc",
+   "corto": "CoKhZdX9jqU",
+   "subido": 1792007211
+  },
   {
    "id": "1788059968080-8730",
    "juego": "Super Street Fighter II X",
