@@ -1,6 +1,40 @@
 {
- "actualizado": 1792012041,
+ "actualizado": 1792014738,
  "retas": [
+  {
+   "id": "1781047245595-2077",
+   "juego": "Super Street Fighter II X",
+   "p1": "FabsGtz",
+   "p2": "znoopyglobal",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Blanka",
+   "p2pj": "Chun Li",
+   "ft": "FT5",
+   "dur": 817,
+   "yt": "ONIsn_MWquk",
+   "corto": "TWxVWqHDb8Y",
+   "subido": 1792014525
+  },
+  {
+   "id": "1782192414960-3187",
+   "juego": "Super Street Fighter II X",
+   "p1": "FabsGtz",
+   "p2": "BigSexyKevinNash",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Blanka",
+   "p2pj": "Sagat",
+   "ft": "FT5",
+   "dur": 776,
+   "yt": "FjNa3oZi_O0",
+   "corto": "dx0vVwBN_EI",
+   "subido": 1792014261
+  },
   {
    "id": "1782243851114-8224",
    "juego": "Super Street Fighter II X",
