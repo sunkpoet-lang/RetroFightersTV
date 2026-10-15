@@ -1,6 +1,23 @@
 {
- "actualizado": 1792036339,
+ "actualizado": 1792037239,
  "retas": [
+  {
+   "id": "1789747595714-4058",
+   "juego": "Super Street Fighter II X",
+   "p1": "TrisAnimations",
+   "p2": "hismit",
+   "p1rango": "D",
+   "p2rango": "C",
+   "p1pais": "VN",
+   "p2pais": "VN",
+   "p1pj": "Chun Li",
+   "p2pj": "Sagat",
+   "ft": "FT3",
+   "dur": 480,
+   "yt": "Dx6J-xyZMyk",
+   "corto": "4hY2Dve0uaY",
+   "subido": 1792036498
+  },
   {
    "id": "1738196195353-5734",
    "juego": "Capcom vs. SNK 2",
