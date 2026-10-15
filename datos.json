@@ -1,6 +1,23 @@
 {
- "actualizado": 1792051644,
+ "actualizado": 1792054338,
  "retas": [
+  {
+   "id": "1791552080737-5717",
+   "juego": "Super Street Fighter II X",
+   "p1": "ara@VF2",
+   "p2": "Xak",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "JP",
+   "p2pais": "JP",
+   "p1pj": "E.Honda",
+   "p2pj": "Dhalsim",
+   "ft": "FT5",
+   "dur": 835,
+   "yt": "8DeTIMltU6I",
+   "corto": "XMAtYNXJGs8",
+   "subido": 1792054324
+  },
   {
    "id": "1791649403060-9869",
    "juego": "Capcom vs. SNK 2",
