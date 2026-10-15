@@ -1,6 +1,40 @@
 {
- "actualizado": 1792039038,
+ "actualizado": 1792044439,
  "retas": [
+  {
+   "id": "1790217948278-2166",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "firebutton",
+   "p2": "hiu12ike",
+   "p1rango": "?",
+   "p2rango": "?",
+   "p1pais": "CA",
+   "p2pais": "US",
+   "p1pj": "Sean",
+   "p2pj": "Akuma",
+   "ft": "VS",
+   "dur": 766,
+   "yt": "Z95J0bM76DQ",
+   "corto": "cyyClfgUx_Y",
+   "subido": 1792044315
+  },
+  {
+   "id": "1790773410966-3826",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "Loonss",
+   "p2": "zndr",
+   "p1rango": "D",
+   "p2rango": "D",
+   "p1pais": "PH",
+   "p2pais": "PH",
+   "p1pj": "Akuma",
+   "p2pj": "Ryu",
+   "ft": "FT3",
+   "dur": 303,
+   "yt": "do4pBJl-6Lg",
+   "corto": "mrRG73FYGOk",
+   "subido": 1792043979
+  },
   {
    "id": "1792032705640-6152",
    "juego": "Super Street Fighter II X",
