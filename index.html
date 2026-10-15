@@ -193,6 +193,12 @@ h2 { font: 400 11px/1.6 var(--pixel); color: var(--rosa); letter-spacing: 0.06em
   box-shadow: 0 0 0 2px var(--ambar), 0 0 22px #ffc93c44; display: flex; gap: 14px 24px; flex-wrap: wrap; align-items: center; justify-content: space-between; }
 .apoyo p { margin: 0; flex: 1 1 320px; min-width: 0; color: var(--tenue); max-width: 62ch; }
 .apoyo p b { color: var(--texto); font-weight: 600; }
+/* Aviso de beta: cinta de precaución arriba del letrero */
+.beta { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 14px; margin: 0 0 14px; padding: 10px 16px;
+  border-radius: 8px; border: 2px solid #1a1206; color: #1a1206; text-align: center;
+  background: repeating-linear-gradient(-45deg, #ffc93c 0 18px, #f2b51c 18px 36px); box-shadow: 0 0 18px #ffc93c55; }
+.beta b { font: 11px/1.6 var(--pixel); letter-spacing: .04em; }
+.beta a { font: 600 15px var(--cuerpo); color: #1a1206; text-decoration: underline; text-underline-offset: 3px; }
 footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size: 14px; display: flex; gap: 8px 24px; flex-wrap: wrap; justify-content: space-between; }
 .piso { position: relative; height: 260px; margin-top: -190px; overflow: hidden; pointer-events: none; perspective: 320px;
   -webkit-mask-image: linear-gradient(180deg, #0000 0, #000 70%); mask-image: linear-gradient(180deg, #0000 0, #000 70%); }
@@ -224,6 +230,8 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
     <button data-i="pt" lang="pt" title="Português">PT</button>
     <button data-i="fr" lang="fr" title="Français">FR</button>
   </nav>
+  <p class="beta" role="note"><b data-t="beta">WIP · EARLY BETA — SOMETHING MAY BREAK</b>
+    <a href="https://x.com/BeibiYoda_" target="_blank" rel="noopener"><span data-t="beta_x">Avisa en X</span>: @BeibiYoda_</a></p>
   <header class="letrero">
     <span class="focos a" aria-hidden="true"></span>
     <h1>RETRO<span>FIGHTERS</span>TV</h1>
@@ -262,7 +270,7 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
   </section>
 
   <footer>
-    <span><span data-t="pie_canal">Canal</span>: <a href="https://www.youtube.com/channel/UC9sBM8rceAKacjTyjvFkeUQ" target="_blank" rel="noopener">RetroFightersTV · YouTube</a></span>
+    <span><span data-t="pie_canal">Canal</span>: <a href="https://www.youtube.com/channel/UC9sBM8rceAKacjTyjvFkeUQ" target="_blank" rel="noopener">RetroFightersTV · YouTube</a> · X: <a href="https://x.com/BeibiYoda_" target="_blank" rel="noopener">@BeibiYoda_</a></span>
     <span id="actualizado"></span>
     <span data-t="pie_aviso">Replays grabados de Fightcade. Los juegos y sus personajes pertenecen a sus dueños.</span>
   </footer>
@@ -273,7 +281,7 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
 /* Textos por idioma. Las claves en MAYUSCULAS se pintan con la fuente pixel, que no tiene acentos:
    por eso esas frases se escriben sin ellos en todos los idiomas. */
 const T = {
-  es: { nueva_reta: "NUEVA RETA!", est_pausa: "⏸ En pausa", est_pausa_nota: "Las retas que pidas se guardan y se graban al reanudar.", est_en_linea: "Grabador en línea", est_mantenimiento: "En mantenimiento", est_apagado: "Grabador apagado", est_cargando: "Revisando el grabador…", est_cola: "{n} en cola", est_grabando: "grabando",
+  es: { beta: "WIP · BETA TEMPRANA — ALGO PUEDE FALLAR", beta_x: "Avisa en X", nueva_reta: "NUEVA RETA!", est_pausa: "⏸ En pausa", est_pausa_nota: "Las retas que pidas se guardan y se graban al reanudar.", est_en_linea: "Grabador en línea", est_mantenimiento: "En mantenimiento", est_apagado: "Grabador apagado", est_cargando: "Revisando el grabador…", est_cola: "{n} en cola", est_grabando: "grabando",
         pedir: "PIDE TU RETA", nota_pedir: "Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse.",
         lema: "RETAS DE FIGHTCADE · PURO ARCADE", retas: "RETAS", reta1: "RETA", juegos: "JUEGOS", jugadores: "JUGADORES",
         canal: "VER EL CANAL", elige: "SELECCIONA JUEGO", ant: "< ANT", sig: "SIG >", cargando: "CARGANDO RETAS...",
@@ -285,7 +293,7 @@ const T = {
         pie_canal: "Canal", actualizado: "Actualizado", fecha: "es-MX",
         pie_aviso: "Replays grabados de Fightcade. Los juegos y sus personajes pertenecen a sus dueños.",
         titulo: "RetroFightersTV · Retas de Fightcade" },
-  en: { nueva_reta: "NEW SET!", est_pausa: "⏸ On standby", est_pausa_nota: "Requested sets are saved and recorded when it resumes.", est_en_linea: "Recorder online", est_mantenimiento: "Under maintenance", est_apagado: "Recorder offline", est_cargando: "Checking the recorder…", est_cola: "{n} in queue", est_grabando: "recording",
+  en: { beta: "WIP · EARLY BETA — SOMETHING MAY BREAK", beta_x: "Report it on X", nueva_reta: "NEW SET!", est_pausa: "⏸ On standby", est_pausa_nota: "Requested sets are saved and recorded when it resumes.", est_en_linea: "Recorder online", est_mantenimiento: "Under maintenance", est_apagado: "Recorder offline", est_cargando: "Checking the recorder…", est_cola: "{n} in queue", est_grabando: "recording",
         pedir: "REQUEST YOUR SET", nota_pedir: "Send your Fightcade replay to RetaBot on Telegram. An admin reviews every video before it goes live.",
         lema: "FIGHTCADE SETS · PURE ARCADE", retas: "SETS", reta1: "SET", juegos: "GAMES", jugadores: "PLAYERS",
         canal: "VISIT THE CHANNEL", elige: "SELECT GAME", ant: "< PREV", sig: "NEXT >", cargando: "LOADING SETS...",
@@ -297,7 +305,7 @@ const T = {
         pie_canal: "Channel", actualizado: "Updated", fecha: "en-US",
         pie_aviso: "Replays recorded from Fightcade. The games and their characters belong to their owners.",
         titulo: "RetroFightersTV · Fightcade sets" },
-  pt: { nueva_reta: "NOVA LUTA!", est_pausa: "⏸ Em pausa", est_pausa_nota: "As lutas pedidas ficam salvas e são gravadas ao retomar.", est_en_linea: "Gravador online", est_mantenimiento: "Em manutenção", est_apagado: "Gravador desligado", est_cargando: "Verificando o gravador…", est_cola: "{n} na fila", est_grabando: "gravando",
+  pt: { beta: "WIP · BETA INICIAL — ALGO PODE QUEBRAR", beta_x: "Avise no X", nueva_reta: "NOVA LUTA!", est_pausa: "⏸ Em pausa", est_pausa_nota: "As lutas pedidas ficam salvas e são gravadas ao retomar.", est_en_linea: "Gravador online", est_mantenimiento: "Em manutenção", est_apagado: "Gravador desligado", est_cargando: "Verificando o gravador…", est_cola: "{n} na fila", est_grabando: "gravando",
         pedir: "PEDIR UMA LUTA", nota_pedir: "Envie seu replay do Fightcade para o RetaBot no Telegram. Cada vídeo é revisado pelo admin antes de ser publicado.",
         lema: "LUTAS DO FIGHTCADE · PURO ARCADE", retas: "LUTAS", reta1: "LUTA", juegos: "JOGOS", jugadores: "JOGADORES",
         canal: "VER O CANAL", elige: "ESCOLHA O JOGO", ant: "< ANT", sig: "SEG >", cargando: "CARREGANDO LUTAS...",
@@ -309,7 +317,7 @@ const T = {
         pie_canal: "Canal", actualizado: "Atualizado", fecha: "pt-BR",
         pie_aviso: "Replays gravados do Fightcade. Os jogos e seus personagens pertencem aos seus donos.",
         titulo: "RetroFightersTV · Lutas do Fightcade" },
-  fr: { nueva_reta: "NOUVEAU MATCH!", est_pausa: "⏸ En pause", est_pausa_nota: "Les matchs demandés sont gardés et enregistrés à la reprise.", est_en_linea: "Enregistreur en ligne", est_mantenimiento: "En maintenance", est_apagado: "Enregistreur hors ligne", est_cargando: "Vérification de l'enregistreur…", est_cola: "{n} en attente", est_grabando: "en cours",
+  fr: { beta: "WIP · BETA PRECOCE — CA PEUT CASSER", beta_x: "Signale-le sur X", nueva_reta: "NOUVEAU MATCH!", est_pausa: "⏸ En pause", est_pausa_nota: "Les matchs demandés sont gardés et enregistrés à la reprise.", est_en_linea: "Enregistreur en ligne", est_mantenimiento: "En maintenance", est_apagado: "Enregistreur hors ligne", est_cargando: "Vérification de l'enregistreur…", est_cola: "{n} en attente", est_grabando: "en cours",
         pedir: "DEMANDE TON MATCH", nota_pedir: "Envoie ton replay Fightcade à RetaBot sur Telegram. Chaque vidéo est vérifiée par l'admin avant publication.",
         lema: "MATCHS FIGHTCADE · PUR ARCADE", retas: "MATCHS", reta1: "MATCH", juegos: "JEUX", jugadores: "JOUEURS",
         canal: "VOIR SUR YOUTUBE", elige: "CHOISIS TON JEU", ant: "< RETOUR", sig: "SUITE >", cargando: "CHARGEMENT...",
