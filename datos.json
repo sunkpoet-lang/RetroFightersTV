@@ -1,6 +1,23 @@
 {
- "actualizado": 1792021943,
+ "actualizado": 1792028238,
  "retas": [
+  {
+   "id": "1791930981667-2136",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "The_Norwegian",
+   "p2": "MiBSF2CE-TV",
+   "p1rango": "A",
+   "p2rango": "S",
+   "p1pais": "BR",
+   "p2pais": "BR",
+   "p1pj": "Dhalsim",
+   "p2pj": "M.Bison (Dictator)",
+   "ft": "FT3",
+   "dur": 250,
+   "yt": "umHmGQi9wp8",
+   "corto": "TwrPK49iong",
+   "subido": 1792028121
+  },
   {
    "id": "1791334878651-2466",
    "juego": "Street Fighter III: 3rd Strike",
