@@ -206,6 +206,12 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
 .idiomas button { font: 9px/1 var(--pixel); color: var(--tenue); background: #0d062099; border: 2px solid var(--borde); border-radius: 5px; padding: 8px 9px; cursor: pointer; }
 .idiomas button:hover { color: var(--texto); border-color: var(--violeta); }
 .idiomas button[aria-pressed="true"] { color: var(--noche); background: var(--cian); border-color: var(--cian); box-shadow: 0 0 12px #2de2e677; }
+
+/* La sala: gabinetes, gente y la mascota (RetaBot) dibujados en canvas debajo del letrero */
+.sala { position: relative; height: 240px; margin: 22px 0 6px; border-radius: 14px; overflow: hidden;
+  border: 2px solid var(--borde); box-shadow: 0 0 40px #a45bff22, inset 0 0 30px #000; background: var(--noche); }
+.sala canvas { display: block; width: 100%; height: 100%; }
+@media (max-width: 600px) { .sala { height: 170px; } }
 </style>
 </head>
 <body>
@@ -234,6 +240,7 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
     <p class="nota-pedir" data-t="nota_pedir">Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse.</p>
     <span class="focos b" aria-hidden="true"></span>
   </header>
+  <div class="sala" aria-hidden="true"><canvas id="sala"></canvas></div>
 
   <h2 id="t-juegos" data-t="elige">Selecciona juego</h2>
   <div class="juegos" id="juegos" role="group" aria-labelledby="t-juegos"></div>
@@ -265,7 +272,7 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
 /* Textos por idioma. Las claves en MAYUSCULAS se pintan con la fuente pixel, que no tiene acentos:
    por eso esas frases se escriben sin ellos en todos los idiomas. */
 const T = {
-  es: { est_pausa: "⏸ En pausa", est_pausa_nota: "Las retas que pidas se guardan y se graban al reanudar.", est_en_linea: "Grabador en línea", est_mantenimiento: "En mantenimiento", est_apagado: "Grabador apagado", est_cargando: "Revisando el grabador…", est_cola: "{n} en cola", est_grabando: "grabando",
+  es: { nueva_reta: "NUEVA RETA!", est_pausa: "⏸ En pausa", est_pausa_nota: "Las retas que pidas se guardan y se graban al reanudar.", est_en_linea: "Grabador en línea", est_mantenimiento: "En mantenimiento", est_apagado: "Grabador apagado", est_cargando: "Revisando el grabador…", est_cola: "{n} en cola", est_grabando: "grabando",
         pedir: "PIDE TU RETA", nota_pedir: "Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse.",
         lema: "RETAS DE FIGHTCADE · PURO ARCADE", retas: "RETAS", reta1: "RETA", juegos: "JUEGOS", jugadores: "JUGADORES",
         canal: "VER EL CANAL", elige: "SELECCIONA JUEGO", ant: "< ANT", sig: "SIG >", cargando: "CARGANDO RETAS...",
@@ -277,7 +284,7 @@ const T = {
         pie_canal: "Canal", actualizado: "Actualizado", fecha: "es-MX",
         pie_aviso: "Replays grabados de Fightcade. Los juegos y sus personajes pertenecen a sus dueños.",
         titulo: "RetroFightersTV · Retas de Fightcade" },
-  en: { est_pausa: "⏸ On standby", est_pausa_nota: "Requested sets are saved and recorded when it resumes.", est_en_linea: "Recorder online", est_mantenimiento: "Under maintenance", est_apagado: "Recorder offline", est_cargando: "Checking the recorder…", est_cola: "{n} in queue", est_grabando: "recording",
+  en: { nueva_reta: "NEW SET!", est_pausa: "⏸ On standby", est_pausa_nota: "Requested sets are saved and recorded when it resumes.", est_en_linea: "Recorder online", est_mantenimiento: "Under maintenance", est_apagado: "Recorder offline", est_cargando: "Checking the recorder…", est_cola: "{n} in queue", est_grabando: "recording",
         pedir: "REQUEST YOUR SET", nota_pedir: "Send your Fightcade replay to RetaBot on Telegram. An admin reviews every video before it goes live.",
         lema: "FIGHTCADE SETS · PURE ARCADE", retas: "SETS", reta1: "SET", juegos: "GAMES", jugadores: "PLAYERS",
         canal: "VISIT THE CHANNEL", elige: "SELECT GAME", ant: "< PREV", sig: "NEXT >", cargando: "LOADING SETS...",
@@ -289,7 +296,7 @@ const T = {
         pie_canal: "Channel", actualizado: "Updated", fecha: "en-US",
         pie_aviso: "Replays recorded from Fightcade. The games and their characters belong to their owners.",
         titulo: "RetroFightersTV · Fightcade sets" },
-  pt: { est_pausa: "⏸ Em pausa", est_pausa_nota: "As lutas pedidas ficam salvas e são gravadas ao retomar.", est_en_linea: "Gravador online", est_mantenimiento: "Em manutenção", est_apagado: "Gravador desligado", est_cargando: "Verificando o gravador…", est_cola: "{n} na fila", est_grabando: "gravando",
+  pt: { nueva_reta: "NOVA LUTA!", est_pausa: "⏸ Em pausa", est_pausa_nota: "As lutas pedidas ficam salvas e são gravadas ao retomar.", est_en_linea: "Gravador online", est_mantenimiento: "Em manutenção", est_apagado: "Gravador desligado", est_cargando: "Verificando o gravador…", est_cola: "{n} na fila", est_grabando: "gravando",
         pedir: "PEDIR UMA LUTA", nota_pedir: "Envie seu replay do Fightcade para o RetaBot no Telegram. Cada vídeo é revisado pelo admin antes de ser publicado.",
         lema: "LUTAS DO FIGHTCADE · PURO ARCADE", retas: "LUTAS", reta1: "LUTA", juegos: "JOGOS", jugadores: "JOGADORES",
         canal: "VER O CANAL", elige: "ESCOLHA O JOGO", ant: "< ANT", sig: "SEG >", cargando: "CARREGANDO LUTAS...",
@@ -301,7 +308,7 @@ const T = {
         pie_canal: "Canal", actualizado: "Atualizado", fecha: "pt-BR",
         pie_aviso: "Replays gravados do Fightcade. Os jogos e seus personagens pertencem aos seus donos.",
         titulo: "RetroFightersTV · Lutas do Fightcade" },
-  fr: { est_pausa: "⏸ En pause", est_pausa_nota: "Les matchs demandés sont gardés et enregistrés à la reprise.", est_en_linea: "Enregistreur en ligne", est_mantenimiento: "En maintenance", est_apagado: "Enregistreur hors ligne", est_cargando: "Vérification de l'enregistreur…", est_cola: "{n} en attente", est_grabando: "en cours",
+  fr: { nueva_reta: "NOUVEAU MATCH!", est_pausa: "⏸ En pause", est_pausa_nota: "Les matchs demandés sont gardés et enregistrés à la reprise.", est_en_linea: "Enregistreur en ligne", est_mantenimiento: "En maintenance", est_apagado: "Enregistreur hors ligne", est_cargando: "Vérification de l'enregistreur…", est_cola: "{n} en attente", est_grabando: "en cours",
         pedir: "DEMANDE TON MATCH", nota_pedir: "Envoie ton replay Fightcade à RetaBot sur Telegram. Chaque vidéo est vérifiée par l'admin avant publication.",
         lema: "MATCHS FIGHTCADE · PUR ARCADE", retas: "MATCHS", reta1: "MATCH", juegos: "JEUX", jugadores: "JOUEURS",
         canal: "VOIR SUR YOUTUBE", elige: "CHOISIS TON JEU", ant: "< RETOUR", sig: "SUITE >", cargando: "CHARGEMENT...",
@@ -421,6 +428,274 @@ fetch("datos.json?" + Date.now()).then(r => r.json())
   .catch(() => { fallo = true; pintar(); });
 revisarEstado();
 setInterval(revisarEstado, 60000);
+window.ESTADO_SALA = () => ESTADO;
+</script>
+<script>
+// La sala: fila de gabinetes con gente alrededor, dibujada en canvas (sin imágenes). Decorativa.
+(function () {
+  const lienzo = document.getElementById("sala");
+  if (!lienzo || !lienzo.getContext) return;
+  const ctx = lienzo.getContext("2d");
+  const quieto = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const COL = ["#ff2e88", "#2de2e6", "#a45bff", "#ffc93c", "#ff5a48", "#4aa8ff", "#39ff7a"];
+  let W = 0, H = 0, escena = null, visible = true, t0 = performance.now();
+
+  // aleatorio con semilla: la sala siempre se ve igual
+  function rng(semilla) { let s = semilla >>> 0; return () => ((s = (s * 1664525 + 1013904223) >>> 0) / 4294967296); }
+
+  function armar() {
+    const r = rng(7);
+    const ancho = W < 600 ? 92 : 118, sep = W < 600 ? 14 : 22;
+    const n = Math.ceil(W / (ancho + sep)) + 1;
+    const off = (W - (n * (ancho + sep) - sep)) / 2;
+    const gab = [];
+    for (let i = 0; i < n; i++) {
+      gab.push({ x: off + i * (ancho + sep), w: ancho, c: COL[Math.floor(r() * COL.length)], c2: COL[Math.floor(r() * COL.length)],
+                 hot: r() < 0.35, fase: r() * 10, p1: COL[Math.floor(r() * COL.length)], p2: COL[Math.floor(r() * COL.length)] });
+    }
+    // gente: parejas jugando y bolitas de mirones en los gabinetes "calientes"
+    const gente = [];
+    gab.forEach((g, i) => {
+      const juegan = r() < 0.7;
+      if (juegan) {
+        gente.push({ x: g.x + g.w * 0.3, esc: 1, tipo: Math.floor(r() * 4), brazo: false, fase: r() * 9, luz: g.c });
+        if (r() < 0.8) gente.push({ x: g.x + g.w * 0.72, esc: 1, tipo: Math.floor(r() * 4), brazo: false, fase: r() * 9, luz: g.c });
+      }
+      if (g.hot) {
+        const k = 2 + Math.floor(r() * 3);
+        for (let j = 0; j < k; j++)
+          gente.push({ x: g.x + g.w * (0.05 + r() * 0.9), esc: 1.12 + r() * 0.12, tipo: Math.floor(r() * 4), brazo: r() < 0.5,
+                       fase: r() * 9, luz: g.c, atras: false });
+      }
+    });
+    gente.sort((a, b) => a.esc - b.esc);
+    escena = { gab, gente };
+  }
+
+  function tam() {
+    const caja = lienzo.parentElement.getBoundingClientRect();
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    W = Math.round(caja.width); H = Math.round(caja.height);
+    lienzo.width = W * dpr; lienzo.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    armar();
+    dibujar(performance.now());
+  }
+
+  function rect(x, y, w, h, c) { ctx.fillStyle = c; ctx.fillRect(x, y, w, h); }
+
+  function gabinete(g, t, piso) {
+    const x = g.x, w = g.w, top = H * 0.16, alto = piso - top;
+    // cuerpo con laterales de color
+    const grd = ctx.createLinearGradient(x, 0, x + w, 0);
+    grd.addColorStop(0, g.c + "cc"); grd.addColorStop(0.12, "#1d0f3f"); grd.addColorStop(0.88, "#1d0f3f"); grd.addColorStop(1, g.c + "cc");
+    ctx.fillStyle = grd; ctx.fillRect(x, top, w, alto);
+    // marquesina encendida
+    const mq = alto * 0.12;
+    ctx.save(); ctx.shadowColor = g.c; ctx.shadowBlur = 18;
+    rect(x + 4, top + 3, w - 8, mq, g.c); ctx.restore();
+    rect(x + 8, top + 3 + mq * 0.3, w - 16, mq * 0.4, "#ffffff55");
+    // pantalla
+    const sx = x + w * 0.12, sy = top + mq + alto * 0.06, sw = w * 0.76, sh = alto * 0.36;
+    rect(sx - 3, sy - 3, sw + 6, sh + 6, "#05020b");
+    const brillo = 0.85 + 0.15 * Math.sin(t / 90 + g.fase);
+    ctx.globalAlpha = brillo;
+    const fondo = ctx.createLinearGradient(0, sy, 0, sy + sh);
+    fondo.addColorStop(0, "#1b3b8a"); fondo.addColorStop(1, g.c2 + "aa");
+    ctx.fillStyle = fondo; ctx.fillRect(sx, sy, sw, sh);
+    // barras de vida y dos peleadores pixelados
+    rect(sx + 4, sy + 4, sw * 0.38, 3, "#ffd21f"); rect(sx + sw * 0.58, sy + 4, sw * 0.38, 3, "#ffd21f");
+    const pas = Math.sin(t / 400 + g.fase) * sw * 0.08;
+    const suelo = sy + sh - 5, px = Math.max(3, sw / 16);
+    [[sx + sw * 0.28 + pas, g.p1], [sx + sw * 0.62 - pas, g.p2]].forEach(([fx, c], k) => {
+      const salto = (Math.sin(t / 260 + g.fase + k * 2) > 0.85) ? px * 2 : 0;
+      rect(fx, suelo - px * 4 - salto, px * 1.4, px * 4, c);
+      rect(fx + px * 0.2, suelo - px * 5.2 - salto, px, px, "#f4d1b0");
+    });
+    ctx.globalAlpha = 1;
+    rect(sx, sy, sw, sh * 0.5, "#ffffff08");
+    // tablero inclinado con palancas y botones
+    const ty = sy + sh + alto * 0.05, th = alto * 0.1;
+    ctx.fillStyle = "#120828";
+    ctx.beginPath(); ctx.moveTo(x - 4, ty + th); ctx.lineTo(x + 4, ty); ctx.lineTo(x + w - 4, ty); ctx.lineTo(x + w + 4, ty + th); ctx.fill();
+    [0.25, 0.68].forEach((p, k) => {
+      const bx = x + w * p;
+      rect(bx - 1, ty + th * 0.15, 2, th * 0.45, "#222");
+      ctx.fillStyle = k ? g.p2 : g.p1; ctx.beginPath(); ctx.arc(bx, ty + th * 0.18, 3, 0, 7); ctx.fill();
+      for (let b = 0; b < 3; b++) { ctx.fillStyle = COL[(b + k * 2) % COL.length]; ctx.beginPath(); ctx.arc(bx + 9 + b * 6, ty + th * 0.45, 2, 0, 7); ctx.fill(); }
+    });
+    // reflejo de la pantalla en el piso
+    const ref = ctx.createLinearGradient(0, piso, 0, H);
+    ref.addColorStop(0, g.c2 + "33"); ref.addColorStop(1, "transparent");
+    ctx.fillStyle = ref; ctx.fillRect(sx, piso, sw, H - piso);
+  }
+
+  function persona(p, t, piso) {
+    const e = p.esc * (H / 240), cx = p.x, base = H + 4;
+    const cab = 15 * e, hombro = 34 * e, alto = 78 * e;
+    const brazoArriba = p.brazo && Math.sin(t / 700 + p.fase) > 0.55;
+    ctx.save();
+    ctx.shadowColor = p.luz; ctx.shadowBlur = 10 * e;
+    ctx.fillStyle = "#05020b";
+    // cuerpo y hombros
+    ctx.beginPath();
+    ctx.moveTo(cx - hombro, base); ctx.quadraticCurveTo(cx - hombro, base - alto * 0.62, cx - hombro * 0.55, base - alto * 0.72);
+    ctx.lineTo(cx + hombro * 0.55, base - alto * 0.72); ctx.quadraticCurveTo(cx + hombro, base - alto * 0.62, cx + hombro, base);
+    ctx.fill();
+    // cabeza (con gorra, coleta o pelo parado según el tipo)
+    const hy = base - alto * 0.72 - cab * 0.95;
+    ctx.beginPath(); ctx.arc(cx, hy, cab, 0, 7); ctx.fill();
+    if (p.tipo === 1) { ctx.fillRect(cx - cab * 1.1, hy - cab * 0.4, cab * 2.2, cab * 0.35); }
+    if (p.tipo === 2) { ctx.beginPath(); ctx.ellipse(cx + cab * 0.9, hy + cab * 0.5, cab * 0.35, cab * 0.8, 0.4, 0, 7); ctx.fill(); }
+    if (p.tipo === 3) { for (let k = -2; k <= 2; k++) { ctx.beginPath(); ctx.moveTo(cx + k * cab * 0.35, hy - cab * 0.6); ctx.lineTo(cx + k * cab * 0.45, hy - cab * 1.35); ctx.lineTo(cx + k * cab * 0.35 + cab * 0.3, hy - cab * 0.7); ctx.fill(); } }
+    // brazo levantado de emoción
+    if (brazoArriba) {
+      ctx.lineWidth = 9 * e; ctx.lineCap = "round"; ctx.strokeStyle = "#05020b";
+      ctx.beginPath(); ctx.moveTo(cx + hombro * 0.6, base - alto * 0.66); ctx.lineTo(cx + hombro * 0.95, base - alto * 1.12); ctx.stroke();
+      ctx.beginPath(); ctx.arc(cx + hombro * 0.97, base - alto * 1.16, 6 * e, 0, 7); ctx.fill();
+    }
+    ctx.restore();
+  }
+
+
+  // Mascota: karateka original (gi blanco, cinta negra, banda rosa neón del canal), en pixel art
+  const SPRITE = [
+    "........KKKK............",
+    ".......KKKKKK...........",
+    "......KKKKKKKK..........",
+    "......RRRRRRRRrr........",
+    "......KSSSSSSK.rr.......",
+    "......KSSKSSKS..r.......",
+    ".......SSSSSS...........",
+    "........SSSS............",
+    "......wWWWWWWw..........",
+    ".....WWWWSSWWWW.........",
+    "....WWWWWSSWWWWWSS......",
+    "...SSWWWWWWWWWWWSSS.....",
+    "..SSS.WWWWWWWWW.........",
+    "..SS..WWWWWWWWW.........",
+    "......BBBBBBBBB.........",
+    "......BBBBBBBBBBB.......",
+    "......WWWWwWWWW.B.......",
+    ".....WWWWw.WWWW.........",
+    ".....WWWw...WWWW........",
+    "....WWWW.....WWWW.......",
+    "....WWW.......WWWW......",
+    "...WWWW........WWW......",
+    "...WWW..........WWW.....",
+    "..SSSS..........SSSS....",
+  ];
+  const PAL = { K: "#140a24", S: "#f1c08a", W: "#f4f0ff", w: "#b9b0d6", B: "#1a1020", R: "#ff2e88", r: "#b3125c" };
+  // Salto con gancho: al entrar un pedido nuevo a RetaBot (estado.json "pedidos") o al darle clic
+  let salto = null, aviso = "";
+  function saltar(texto) { if (!quieto && !salto) { salto = performance.now() - t0; aviso = texto || ""; } }
+  function mascota(t, piso) {
+    const px = Math.max(4, Math.round(H / 40));
+    const cols = SPRITE[0].length;
+    const x0 = W - cols * px - (W < 600 ? 10 : 34), base = H - SPRITE.length * px - 2;
+    let dy = 0, golpe = false, gancho = false, agacha = 0;
+    const resp = quieto ? 0 : (Math.sin(t / 380) > 0 ? 1 : 0);
+    if (salto !== null) {
+      const k = (t - salto) / 1100;                          // 1.1 s en total
+      if (k >= 1) { salto = null; }
+      else if (k < 0.15) { agacha = 2; }                     // se agacha
+      else { const q = (k - 0.15) / 0.85; dy = -Math.sin(q * Math.PI) * H * 0.42; gancho = q < 0.75; }
+    } else {
+      golpe = !quieto && (t % 4200) > 3700;
+    }
+    mascota.zona = [x0, base + dy - H * 0.2, cols * px, SPRITE.length * px + H * 0.2];
+    const y0 = base + dy + agacha * px;
+    // estela de fuego del gancho
+    if (gancho) {
+      ctx.save(); ctx.shadowColor = "#ff7a12"; ctx.shadowBlur = 24;
+      const fx = x0 + 15 * px;
+      for (let k = 0; k < 6; k++) {
+        ctx.fillStyle = k % 2 ? "#ffd21f" : "#ff7a12";
+        ctx.fillRect(fx + (k % 3 - 1) * px, y0 + (10 + k * 3) * px, 2 * px, 2 * px);
+      }
+      ctx.restore();
+    }
+    ctx.save(); ctx.shadowColor = "#ffffff66"; ctx.shadowBlur = 6;
+    SPRITE.forEach((fila, y) => {
+      for (let x = 0; x < fila.length; x++) {
+        const c = PAL[fila[x]]; if (!c) continue;
+        if (gancho && y >= 9 && y <= 13 && x >= 15) continue;   // el brazo de guardia se va para arriba
+        const r = (salto === null && y < 14) ? resp : 0;
+        ctx.fillStyle = c; ctx.fillRect(x0 + x * px, y0 + (y + r) * px, px, px);
+      }
+    });
+    if (gancho) {   // brazo hacia arriba con el puño encima de la cabeza
+      ctx.fillStyle = PAL.W; ctx.fillRect(x0 + 14 * px, y0 + 1 * px, 2 * px, 9 * px);
+      ctx.fillStyle = PAL.S; ctx.fillRect(x0 + 13.5 * px, y0 - 2 * px, 3 * px, 3 * px);
+    }
+    if (golpe) {
+      ctx.fillStyle = PAL.W; ctx.fillRect(x0 + 18 * px, y0 + (10 + resp) * px, 3 * px, px);
+      ctx.fillStyle = PAL.S; ctx.fillRect(x0 + 21 * px, y0 + (10 + resp) * px, 2 * px, 2 * px);
+    }
+    ctx.restore();
+    // aviso pixelado
+    if (salto !== null && aviso) {
+      ctx.save(); ctx.font = `${Math.round(H * 0.07)}px "Press Start 2P", monospace`; ctx.textAlign = "right";
+      ctx.shadowColor = "#ffc93c"; ctx.shadowBlur = 16; ctx.fillStyle = "#fff09a";
+      ctx.fillText(aviso, x0 - 12, H * 0.32); ctx.restore();
+    }
+  }
+  function dibujar(t) {
+    if (!W || !escena) return;
+    // pared y techo
+    const pared = ctx.createLinearGradient(0, 0, 0, H);
+    pared.addColorStop(0, "#0a0418"); pared.addColorStop(0.7, "#170a33"); pared.addColorStop(1, "#0d0620");
+    ctx.fillStyle = pared; ctx.fillRect(0, 0, W, H);
+    // tubos de luz en el techo
+    for (let x = 30; x < W; x += 260) {
+      ctx.save(); ctx.shadowColor = "#a45bff"; ctx.shadowBlur = 16; rect(x, 6, 120, 3, "#d9b8ff"); ctx.restore();
+    }
+    // letrero neón que parpadea a ratos
+    const on = quieto || Math.sin(t / 1300) > -0.9 || Math.sin(t / 97) > 0;
+    ctx.save(); ctx.font = `${Math.round(H * 0.075)}px "Press Start 2P", monospace`; ctx.textAlign = "right";
+    ctx.shadowColor = "#ff2e88"; ctx.shadowBlur = on ? 22 : 0; ctx.fillStyle = on ? "#ffd0e6" : "#4a1430";
+    ctx.fillText("INSERT COIN", W - 24, H * 0.115); ctx.restore();
+    const piso = H * 0.86;
+    // piso
+    const p = ctx.createLinearGradient(0, piso, 0, H);
+    p.addColorStop(0, "#1b0f35"); p.addColorStop(1, "#07030f");
+    ctx.fillStyle = p; ctx.fillRect(0, piso, W, H - piso);
+    escena.gab.forEach(g => gabinete(g, t, piso));
+    escena.gente.forEach(pe => persona(pe, t, piso));
+    // velo inferior para fundir con la página
+    const velo = ctx.createLinearGradient(0, H * 0.7, 0, H);
+    velo.addColorStop(0, "transparent"); velo.addColorStop(1, "#0d0620");
+    ctx.fillStyle = velo; ctx.fillRect(0, H * 0.7, W, H * 0.3);
+    mascota(t, piso);
+  }
+
+  let ultimo = 0;
+  function bucle(t) {
+    if (visible && !document.hidden && t - ultimo > 66) { ultimo = t; dibujar(t - t0); }
+    requestAnimationFrame(bucle);
+  }
+  if ("IntersectionObserver" in window)
+    new IntersectionObserver(e => { visible = e[0].isIntersecting; }).observe(lienzo);
+  lienzo.addEventListener("click", ev => {
+    const r = lienzo.getBoundingClientRect(), z = mascota.zona;
+    const x = ev.clientX - r.left, y = ev.clientY - r.top;
+    if (z && x >= z[0] - 20 && x <= z[0] + z[2] + 20 && y >= z[1]) saltar("");
+  });
+  lienzo.style.cursor = "pointer";
+  let pedidos = null;
+  setInterval(() => {
+    const e = window.ESTADO_SALA && window.ESTADO_SALA();
+    if (!e || typeof e.pedidos !== "number") return;
+    if (pedidos !== null && e.pedidos > pedidos)
+      saltar(typeof t === "function" && t("nueva_reta") ? t("nueva_reta") : "NEW!");
+    pedidos = e.pedidos;
+  }, 3000);
+  setTimeout(() => saltar(""), 1800);   // saludo al abrir la página
+  window.addEventListener("resize", tam);
+  tam();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => dibujar(performance.now() - t0));
+  if (!quieto) requestAnimationFrame(bucle);
+})();
 </script>
 </body>
 </html>
