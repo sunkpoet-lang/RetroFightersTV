@@ -1,6 +1,23 @@
 {
- "actualizado": 1792106541,
+ "actualizado": 1792111941,
  "retas": [
+  {
+   "id": "1791598768563-3675",
+   "juego": "The King of Fighters '97",
+   "p1": "documentt",
+   "p2": "Beta da Montanha",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "CA",
+   "p2pais": "BR",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 1047,
+   "yt": "1Iidbrl-qTE",
+   "corto": "cYAA4AAuXxo",
+   "subido": 1792111185
+  },
   {
    "id": "1791776989556-6967",
    "juego": "flycast_ausfache",
