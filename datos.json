@@ -1,6 +1,23 @@
 {
- "actualizado": 1792111941,
+ "actualizado": 1792122738,
  "retas": [
+  {
+   "id": "1791772436649-1986",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "Robotron.",
+   "p2": "MT Yurikowa",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "CL",
+   "p2pais": "MX",
+   "p1pj": "M.Bison (Dictator)",
+   "p2pj": "Guile",
+   "ft": "FT5",
+   "dur": 991,
+   "yt": "G8NNC2vtnZc",
+   "corto": "FrmADq9Xoak",
+   "subido": 1792122162
+  },
   {
    "id": "1791598768563-3675",
    "juego": "The King of Fighters '97",
