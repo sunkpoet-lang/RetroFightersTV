@@ -1,6 +1,23 @@
 {
- "actualizado": 1792138039,
+ "actualizado": 1792139839,
  "retas": [
+  {
+   "id": "1789542082020-9560",
+   "juego": "Super Street Fighter II X",
+   "p1": "ara@VF2",
+   "p2": "makiri",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "JP",
+   "p2pais": "JP",
+   "p1pj": "E.Honda",
+   "p2pj": "Ken",
+   "ft": "FT5",
+   "dur": 699,
+   "yt": "G5xE8RPh1TQ",
+   "corto": "qYR9udX2tAY",
+   "subido": 1792139249
+  },
   {
    "id": "1791991550438-9171",
    "juego": "The King of Fighters '98",
