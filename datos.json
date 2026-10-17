@@ -1,6 +1,23 @@
 {
- "actualizado": 1792266739,
+ "actualizado": 1792268538,
  "retas": [
+  {
+   "id": "1791774184672-8703",
+   "juego": "mk2",
+   "p1": "SLP_GATITOMAUX",
+   "p2": "SenzoTanaka",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Scorpion",
+   "p2pj": "Johnny Cage",
+   "ft": "FT5",
+   "dur": 923,
+   "yt": "94s2C5kc5hI",
+   "corto": "v_KYvIQZekk",
+   "subido": 1792268023
+  },
   {
    "id": "1749172146764-4621",
    "juego": "JoJo's Bizarre Adventure",
