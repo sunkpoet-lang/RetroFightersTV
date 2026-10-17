@@ -1,6 +1,23 @@
 {
- "actualizado": 1792268538,
+ "actualizado": 1792273939,
  "retas": [
+  {
+   "id": "1792235212064-4472",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "Atb555",
+   "p2": "Fahad3s",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "GB",
+   "p2pais": "GB",
+   "p1pj": "Akuma",
+   "p2pj": "Urien",
+   "ft": "VS",
+   "dur": 2033,
+   "yt": "7FLIXcBGyQU",
+   "corto": "PZ4N8xVB7hc",
+   "subido": 1792273214
+  },
   {
    "id": "1791774184672-8703",
    "juego": "mk2",
