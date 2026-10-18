@@ -1,6 +1,23 @@
 {
- "actualizado": 1792292839,
+ "actualizado": 1792299139,
  "retas": [
+  {
+   "id": "1792294731440-7495",
+   "juego": "Super Street Fighter II X",
+   "p1": "Rotoplas",
+   "p2": "curtid0r",
+   "p1rango": "C",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "MX",
+   "p1pj": "Zangief",
+   "p2pj": "Vega (Claw)",
+   "ft": "FT5",
+   "dur": 997,
+   "yt": "ZDwoRygwmuo",
+   "corto": "4cLEAMlRBiE",
+   "subido": 1792298270
+  },
   {
    "id": "1792289413782-9823",
    "juego": "flycast_pjustic",
