@@ -1,6 +1,40 @@
 {
- "actualizado": 1792482738,
+ "actualizado": 1792534038,
  "retas": [
+  {
+   "id": "1792476576130-6280",
+   "juego": "Super Street Fighter II X",
+   "p1": "igngnokt",
+   "p2": "Salox78",
+   "p1rango": "C",
+   "p2rango": "C",
+   "p1pais": "US",
+   "p2pais": "MX",
+   "p1pj": "Balrog (Boxer)",
+   "p2pj": "M.Bison (Dictator)",
+   "ft": "VS",
+   "dur": 1206,
+   "yt": "RyJaDfcB3sk",
+   "corto": "R4JnAxcQ1Ws",
+   "subido": 1792533996
+  },
+  {
+   "id": "1792475476287-2287",
+   "juego": "Super Street Fighter II X",
+   "p1": "Marator",
+   "p2": "Salox78",
+   "p1rango": "?",
+   "p2rango": "C",
+   "p1pais": "MX",
+   "p2pais": "MX",
+   "p1pj": "Ken",
+   "p2pj": "Guile",
+   "ft": "VS",
+   "dur": 990,
+   "yt": "FEw9szO_2xk",
+   "corto": "QOU2Flb4BxU",
+   "subido": 1792533610
+  },
   {
    "id": "1755388161097-2884",
    "juego": "Super Street Fighter II X",
