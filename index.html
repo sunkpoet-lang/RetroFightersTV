@@ -248,7 +248,7 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
       <a class="boton canal" href="https://www.youtube.com/channel/UC9sBM8rceAKacjTyjvFkeUQ?sub_confirmation=1" target="_blank" rel="noopener">▶ <span data-t="canal">VER EL CANAL</span></a>
       <a class="boton cafe" href="https://buymeacoffee.com/dannybarreto" target="_blank" rel="noopener"><span class="ranura" aria-hidden="true"></span> INSERT COIN · BUY ME A COFFEE</a>
     </div>
-    <p class="nota-pedir" data-t="nota_pedir">Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse.</p>
+    <p class="nota-pedir" data-t="nota_pedir">Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse. SNES no disponible por ahora.</p>
     <span class="focos b" aria-hidden="true"></span>
   </header>
 
@@ -283,7 +283,7 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
    por eso esas frases se escriben sin ellos en todos los idiomas. */
 const T = {
   es: { beta: "WIP · BETA TEMPRANA — ALGO PUEDE FALLAR", beta_x: "Avisa en X", nueva_reta: "NUEVA RETA!", est_pausa: "⏸ En pausa", est_pausa_nota: "Las retas que pidas se guardan y se graban al reanudar.", est_en_linea: "Grabador en línea", est_mantenimiento: "En mantenimiento", est_apagado: "Grabador apagado", est_cargando: "Revisando el grabador…", est_cola: "{n} en cola", est_grabando: "grabando",
-        pedir: "PIDE TU RETA", nota_pedir: "Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse.",
+        pedir: "PIDE TU RETA", nota_pedir: "Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse. SNES no disponible por ahora.",
         lema: "RETAS DE FIGHTCADE · PURO ARCADE", retas: "RETAS", reta1: "RETA", juegos: "JUEGOS", jugadores: "JUGADORES",
         canal: "VER EL CANAL", elige: "SELECCIONA JUEGO", ant: "< ANT", sig: "SIG >", cargando: "CARGANDO RETAS...",
         nada: "NINGUNA RETA COINCIDE<br>PRUEBA CON OTRO JUGADOR O JUEGO", vacio: "SIN RETAS PUBLICADAS POR AHORA",
@@ -295,7 +295,7 @@ const T = {
         pie_aviso: "Replays grabados de Fightcade. Los juegos y sus personajes pertenecen a sus dueños.",
         titulo: "RetroFightersTV · Retas de Fightcade" },
   en: { beta: "WIP · EARLY BETA — SOMETHING MAY BREAK", beta_x: "Report it on X", nueva_reta: "NEW SET!", est_pausa: "⏸ On standby", est_pausa_nota: "Requested sets are saved and recorded when it resumes.", est_en_linea: "Recorder online", est_mantenimiento: "Under maintenance", est_apagado: "Recorder offline", est_cargando: "Checking the recorder…", est_cola: "{n} in queue", est_grabando: "recording",
-        pedir: "REQUEST YOUR SET", nota_pedir: "Send your Fightcade replay to RetaBot on Telegram. An admin reviews every video before it goes live.",
+        pedir: "REQUEST YOUR SET", nota_pedir: "Send your Fightcade replay to RetaBot on Telegram. An admin reviews every video before it goes live. SNES not available for now.",
         lema: "FIGHTCADE SETS · PURE ARCADE", retas: "SETS", reta1: "SET", juegos: "GAMES", jugadores: "PLAYERS",
         canal: "VISIT THE CHANNEL", elige: "SELECT GAME", ant: "< PREV", sig: "NEXT >", cargando: "LOADING SETS...",
         nada: "NO SETS MATCH<br>TRY ANOTHER PLAYER OR GAME", vacio: "NO SETS PUBLISHED YET",
@@ -307,7 +307,7 @@ const T = {
         pie_aviso: "Replays recorded from Fightcade. The games and their characters belong to their owners.",
         titulo: "RetroFightersTV · Fightcade sets" },
   pt: { beta: "WIP · BETA INICIAL — ALGO PODE QUEBRAR", beta_x: "Avise no X", nueva_reta: "NOVA LUTA!", est_pausa: "⏸ Em pausa", est_pausa_nota: "As lutas pedidas ficam salvas e são gravadas ao retomar.", est_en_linea: "Gravador online", est_mantenimiento: "Em manutenção", est_apagado: "Gravador desligado", est_cargando: "Verificando o gravador…", est_cola: "{n} na fila", est_grabando: "gravando",
-        pedir: "PEDIR UMA LUTA", nota_pedir: "Envie seu replay do Fightcade para o RetaBot no Telegram. Cada vídeo é revisado pelo admin antes de ser publicado.",
+        pedir: "PEDIR UMA LUTA", nota_pedir: "Envie seu replay do Fightcade para o RetaBot no Telegram. Cada vídeo é revisado pelo admin antes de ser publicado. SNES indisponível por enquanto.",
         lema: "LUTAS DO FIGHTCADE · PURO ARCADE", retas: "LUTAS", reta1: "LUTA", juegos: "JOGOS", jugadores: "JOGADORES",
         canal: "VER O CANAL", elige: "ESCOLHA O JOGO", ant: "< ANT", sig: "SEG >", cargando: "CARREGANDO LUTAS...",
         nada: "NENHUMA LUTA ENCONTRADA<br>TENTE OUTRO JOGADOR OU JOGO", vacio: "NENHUMA LUTA PUBLICADA POR ENQUANTO",
@@ -319,7 +319,7 @@ const T = {
         pie_aviso: "Replays gravados do Fightcade. Os jogos e seus personagens pertencem aos seus donos.",
         titulo: "RetroFightersTV · Lutas do Fightcade" },
   fr: { beta: "WIP · BETA PRECOCE — CA PEUT CASSER", beta_x: "Signale-le sur X", nueva_reta: "NOUVEAU MATCH!", est_pausa: "⏸ En pause", est_pausa_nota: "Les matchs demandés sont gardés et enregistrés à la reprise.", est_en_linea: "Enregistreur en ligne", est_mantenimiento: "En maintenance", est_apagado: "Enregistreur hors ligne", est_cargando: "Vérification de l'enregistreur…", est_cola: "{n} en attente", est_grabando: "en cours",
-        pedir: "DEMANDE TON MATCH", nota_pedir: "Envoie ton replay Fightcade à RetaBot sur Telegram. Chaque vidéo est vérifiée par l'admin avant publication.",
+        pedir: "DEMANDE TON MATCH", nota_pedir: "Envoie ton replay Fightcade à RetaBot sur Telegram. Chaque vidéo est vérifiée par l'admin avant publication. SNES indisponible pour le moment.",
         lema: "MATCHS FIGHTCADE · PUR ARCADE", retas: "MATCHS", reta1: "MATCH", juegos: "JEUX", jugadores: "JOUEURS",
         canal: "VOIR SUR YOUTUBE", elige: "CHOISIS TON JEU", ant: "< RETOUR", sig: "SUITE >", cargando: "CHARGEMENT...",
         nada: "AUCUN MATCH NE CORRESPOND<br>ESSAIE UN AUTRE JOUEUR OU JEU", vacio: "PAS ENCORE DE MATCHS",
