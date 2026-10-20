@@ -168,7 +168,8 @@ h2 { font: 400 11px/1.6 var(--pixel); color: var(--rosa); letter-spacing: 0.06em
 .jug.d .datos { justify-content: flex-end; }
 .datos img { width: 24px; height: 16px; object-fit: cover; border: 1px solid #000; }
 .rango { width: 22px; height: 22px; border-radius: 50%; border: 2px solid currentColor; display: grid; place-items: center; font: 700 13px/1 var(--titular); }
-.rS { color: #ff5d84; } .rA { color: #b877f0; } .rB { color: #4db4f5; } .rC { color: #f2c430; } .rD { color: #cdcdcd; } .rE { color: #e09a4e; }
+/* Colores de rango de Fightcade (los mismos del grabador, vm/guest/barra.py) */
+.rS { color: #e54875; } .rA { color: #a047b2; } .rB { color: #01a6d6; } .rC { color: #efc54a; } .rD { color: #cdcdcd; } .rE { color: #bf783f; } .rQ { color: #757575; }
 .vs { font: 12px var(--pixel); color: var(--ambar); padding-top: 6px; text-shadow: 0 0 10px #ffc93c99; }
 .info { font: 12px ui-monospace, Consolas, monospace; color: var(--tenue); margin-top: auto; text-align: center; }
 /* tablero de control: palanca y botones */
@@ -347,7 +348,7 @@ const t = k => T[idioma][k];
 function jugador(r, p, clase) {
   const pais = r[p + "pais"], rango = r[p + "rango"], pj = r[p + "pj"];
   const extra = [pais ? `<img src="banderas/${esc(pais.toLowerCase())}.png" alt="${esc(pais)}" title="${esc(pais)}" onerror="this.remove()">` : "",
-                 rango ? `<span class="rango r${esc(rango)}" title="${t("rango")} ${esc(rango)}">${esc(rango)}</span>` : "",
+                 rango ? `<span class="rango r${rango === "?" ? "Q" : esc(rango)}" title="${t("rango")} ${esc(rango)}">${esc(rango)}</span>` : "",
                  pj ? `<span>${esc(pj)}</span>` : ""].filter(Boolean);
   return `<div class="jug ${clase}"><strong>${esc(r[p])}</strong>${extra.length ? `<div class="datos">${clase ? extra.reverse().join("") : extra.join("")}</div>` : ""}</div>`;
 }
