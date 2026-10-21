@@ -1,6 +1,23 @@
 {
- "actualizado": 1792625838,
+ "actualizado": 1792626738,
  "retas": [
+  {
+   "id": "1792611781892-2291",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "ghusek",
+   "p2": "RENOB",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "CA",
+   "p2pais": "US",
+   "p1pj": "Chun-Li",
+   "p2pj": "Dudley",
+   "ft": "FT3",
+   "dur": 344,
+   "yt": "H11mDNg3808",
+   "corto": "X-4mkll6xAo",
+   "subido": 1792626052
+  },
   {
    "id": "1792265276802-5967",
    "juego": "Capcom vs. SNK 2",
