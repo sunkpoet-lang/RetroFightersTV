@@ -104,6 +104,15 @@ img { max-width: 100%; }
 .estado b { font-weight: 700; }
 @keyframes foco { 50% { box-shadow: 0 0 4px var(--c), 0 0 10px var(--c); } }
 .nota-pedir { margin: 12px 0 0; font-size: 13px; color: var(--tenue); }
+.nota-pedir a { color: var(--cian); }
+/* Preguntas frecuentes (cambio ayuda-para-usuarios): una por bloque, se abre con un toque */
+.faq { margin: 34px 0 0; scroll-margin-top: 16px; }
+.faq details { border: 2px solid var(--borde); border-radius: 8px; margin: 0 0 10px; background: #0006; }
+.faq summary { cursor: pointer; padding: 12px 14px; font: 600 16px/1.3 var(--cuerpo); color: var(--texto, #fff); list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::before { content: "+"; display: inline-block; width: 1.2em; color: var(--rosa); font-weight: 700; }
+.faq details[open] summary::before { content: "\2212"; }
+.faq details p { margin: 0; padding: 0 14px 14px 32px; font: 15px/1.5 var(--cuerpo); color: var(--tenue); }
 .boton.canal:hover { background: var(--cian); color: var(--noche); text-shadow: none; }
 .boton.cafe { color: #2a1600; border-color: #fff0b8; background: linear-gradient(180deg, #ffe07a 0, var(--ambar) 55%, #e09a12 100%);
   box-shadow: 0 4px 0 #8a5a06, 0 0 22px #ffc93c88; }
@@ -248,7 +257,7 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
       <a class="boton canal" href="https://www.youtube.com/channel/UC9sBM8rceAKacjTyjvFkeUQ?sub_confirmation=1" target="_blank" rel="noopener">▶ <span data-t="canal">VER EL CANAL</span></a>
       <a class="boton cafe" href="https://buymeacoffee.com/dannybarreto" target="_blank" rel="noopener"><span class="ranura" aria-hidden="true"></span> INSERT COIN · BUY ME A COFFEE</a>
     </div>
-    <p class="nota-pedir" data-t="nota_pedir">Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse. SNES no disponible por ahora.</p>
+    <p class="nota-pedir"><span data-t="nota_pedir">Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse. Máximo 30 minutos por video. SNES no disponible por ahora.</span> <a href="#faq" data-t="ver_faq">Preguntas frecuentes</a></p>
     <span class="focos b" aria-hidden="true"></span>
   </header>
 
@@ -264,6 +273,15 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
   <div class="cuenta" id="cuenta" aria-live="polite"></div>
   <div class="pared" id="pared"><div class="vacio">...</div></div>
   <div class="paginas" id="paginas" hidden><button id="ant">&lt; ANT</button><span id="pag"></span><button id="sig">SIG &gt;</button></div>
+
+  <section class="faq" id="faq" aria-labelledby="t-faq">
+    <h2 id="t-faq" data-t="faq_titulo">PREGUNTAS FRECUENTES</h2>
+    <details><summary data-t="faq_p1"></summary><p data-t="faq_r1"></p></details>
+    <details><summary data-t="faq_p2"></summary><p data-t="faq_r2"></p></details>
+    <details><summary data-t="faq_p3"></summary><p data-t="faq_r3"></p></details>
+    <details><summary data-t="faq_p4"></summary><p data-t="faq_r4"></p></details>
+    <details><summary data-t="faq_p5"></summary><p data-t="faq_r5"></p></details>
+  </section>
 
   <section class="apoyo">
     <p id="apoyo"></p>
@@ -283,7 +301,8 @@ footer { margin-top: 22px; padding-bottom: 26px; color: var(--tenue); font-size:
    por eso esas frases se escriben sin ellos en todos los idiomas. */
 const T = {
   es: { beta: "WIP · BETA TEMPRANA — ALGO PUEDE FALLAR", beta_x: "Avisa en X", nueva_reta: "NUEVA RETA!", est_pausa: "⏸ En pausa", est_pausa_nota: "Las retas que pidas se guardan y se graban al reanudar.", est_en_linea: "Grabador en línea", est_mantenimiento: "En mantenimiento", est_apagado: "Grabador apagado", est_cargando: "Revisando el grabador…", est_cola: "{n} en cola", est_grabando: "grabando",
-        pedir: "PIDE TU RETA", nota_pedir: "Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse. SNES no disponible por ahora.",
+        pedir: "PIDE TU RETA", nota_pedir: "Manda tu replay de Fightcade a RetaBot en Telegram. Cada video lo revisa el admin antes de publicarse. Máximo 30 minutos por video. SNES no disponible por ahora.",
+        ver_faq: "Preguntas frecuentes", faq_titulo: "PREGUNTAS FRECUENTES", faq_p1: "¿Cómo pido una reta?", faq_r1: "Abre el replay en Fightcade, copia su enlace (https://replay.fightcade.com/...) y pégalo a RetaBot en Telegram o en el Discord del canal, uno por mensaje.", faq_p2: "¿Cuánto puede durar?", faq_r2: "Máximo 30 minutos por video. Las retas más largas no se graban y RetaBot te avisa.", faq_p3: "¿Qué juegos se pueden pedir?", faq_r3: "Los de FBNeo y Flycast que tenga el grabador. SNES no está disponible por ahora.", faq_p4: "¿Cuándo sale mi video?", faq_r4: "El admin revisa cada video antes de publicarlo y RetaBot te avisa cuando sale. En Telegram, /estado muestra en qué van tus retas.", faq_p5: "¿Algo falló o tienes una idea?", faq_r5: "Escríbele a RetaBot /feedback y tu mensaje (en Discord, !feedback).",
         lema: "RETAS DE FIGHTCADE · PURO ARCADE", retas: "RETAS", reta1: "RETA", juegos: "JUEGOS", jugadores: "JUGADORES",
         canal: "VER EL CANAL", elige: "SELECCIONA JUEGO", ant: "< ANT", sig: "SIG >", cargando: "CARGANDO RETAS...",
         nada: "NINGUNA RETA COINCIDE<br>PRUEBA CON OTRO JUGADOR O JUEGO", vacio: "SIN RETAS PUBLICADAS POR AHORA",
@@ -295,7 +314,8 @@ const T = {
         pie_aviso: "Replays grabados de Fightcade. Los juegos y sus personajes pertenecen a sus dueños.",
         titulo: "RetroFightersTV · Retas de Fightcade" },
   en: { beta: "WIP · EARLY BETA — SOMETHING MAY BREAK", beta_x: "Report it on X", nueva_reta: "NEW SET!", est_pausa: "⏸ On standby", est_pausa_nota: "Requested sets are saved and recorded when it resumes.", est_en_linea: "Recorder online", est_mantenimiento: "Under maintenance", est_apagado: "Recorder offline", est_cargando: "Checking the recorder…", est_cola: "{n} in queue", est_grabando: "recording",
-        pedir: "REQUEST YOUR SET", nota_pedir: "Send your Fightcade replay to RetaBot on Telegram. An admin reviews every video before it goes live. SNES not available for now.",
+        pedir: "REQUEST YOUR SET", nota_pedir: "Send your Fightcade replay to RetaBot on Telegram. An admin reviews every video before it goes live. 30 minutes per video at most. SNES not available for now.",
+        ver_faq: "FAQ", faq_titulo: "FAQ", faq_p1: "How do I request a set?", faq_r1: "Open the replay in Fightcade, copy its link (https://replay.fightcade.com/...) and paste it to RetaBot on Telegram or on the channel's Discord, one per message.", faq_p2: "How long can it be?", faq_r2: "30 minutes per video at most. Longer sets aren't recorded and RetaBot lets you know.", faq_p3: "Which games can I request?", faq_r3: "The FBNeo and Flycast games the recorder has. SNES isn't available for now.", faq_p4: "When is my video out?", faq_r4: "An admin reviews every video before it goes live and RetaBot tells you when it's out. On Telegram, /status shows how your sets are going.", faq_p5: "Something broke or have an idea?", faq_r5: "Send RetaBot /feedback and your message (on Discord, !feedback).",
         lema: "FIGHTCADE SETS · PURE ARCADE", retas: "SETS", reta1: "SET", juegos: "GAMES", jugadores: "PLAYERS",
         canal: "VISIT THE CHANNEL", elige: "SELECT GAME", ant: "< PREV", sig: "NEXT >", cargando: "LOADING SETS...",
         nada: "NO SETS MATCH<br>TRY ANOTHER PLAYER OR GAME", vacio: "NO SETS PUBLISHED YET",
@@ -307,7 +327,8 @@ const T = {
         pie_aviso: "Replays recorded from Fightcade. The games and their characters belong to their owners.",
         titulo: "RetroFightersTV · Fightcade sets" },
   pt: { beta: "WIP · BETA INICIAL — ALGO PODE QUEBRAR", beta_x: "Avise no X", nueva_reta: "NOVA LUTA!", est_pausa: "⏸ Em pausa", est_pausa_nota: "As lutas pedidas ficam salvas e são gravadas ao retomar.", est_en_linea: "Gravador online", est_mantenimiento: "Em manutenção", est_apagado: "Gravador desligado", est_cargando: "Verificando o gravador…", est_cola: "{n} na fila", est_grabando: "gravando",
-        pedir: "PEDIR UMA LUTA", nota_pedir: "Envie seu replay do Fightcade para o RetaBot no Telegram. Cada vídeo é revisado pelo admin antes de ser publicado. SNES indisponível por enquanto.",
+        pedir: "PEDIR UMA LUTA", nota_pedir: "Envie seu replay do Fightcade para o RetaBot no Telegram. Cada vídeo é revisado pelo admin antes de ser publicado. Máximo de 30 minutos por vídeo. SNES indisponível por enquanto.",
+        ver_faq: "Perguntas frequentes", faq_titulo: "PERGUNTAS FREQUENTES", faq_p1: "Como peço uma luta?", faq_r1: "Abra o replay no Fightcade, copie o link (https://replay.fightcade.com/...) e cole para o RetaBot no Telegram ou no Discord do canal, um por mensagem.", faq_p2: "Quanto tempo pode durar?", faq_r2: "No máximo 30 minutos por vídeo. Lutas mais longas não são gravadas e o RetaBot avisa você.", faq_p3: "Quais jogos posso pedir?", faq_r3: "Os de FBNeo e Flycast que o gravador tiver. SNES não está disponível por enquanto.", faq_p4: "Quando sai meu vídeo?", faq_r4: "O admin revisa cada vídeo antes de publicar e o RetaBot avisa quando sair. No Telegram, /status mostra como estão suas lutas.", faq_p5: "Algo deu errado ou tem uma ideia?", faq_r5: "Mande para o RetaBot /feedback e sua mensagem (no Discord, !feedback).",
         lema: "LUTAS DO FIGHTCADE · PURO ARCADE", retas: "LUTAS", reta1: "LUTA", juegos: "JOGOS", jugadores: "JOGADORES",
         canal: "VER O CANAL", elige: "ESCOLHA O JOGO", ant: "< ANT", sig: "SEG >", cargando: "CARREGANDO LUTAS...",
         nada: "NENHUMA LUTA ENCONTRADA<br>TENTE OUTRO JOGADOR OU JOGO", vacio: "NENHUMA LUTA PUBLICADA POR ENQUANTO",
@@ -319,7 +340,8 @@ const T = {
         pie_aviso: "Replays gravados do Fightcade. Os jogos e seus personagens pertencem aos seus donos.",
         titulo: "RetroFightersTV · Lutas do Fightcade" },
   fr: { beta: "WIP · BETA PRECOCE — CA PEUT CASSER", beta_x: "Signale-le sur X", nueva_reta: "NOUVEAU MATCH!", est_pausa: "⏸ En pause", est_pausa_nota: "Les matchs demandés sont gardés et enregistrés à la reprise.", est_en_linea: "Enregistreur en ligne", est_mantenimiento: "En maintenance", est_apagado: "Enregistreur hors ligne", est_cargando: "Vérification de l'enregistreur…", est_cola: "{n} en attente", est_grabando: "en cours",
-        pedir: "DEMANDE TON MATCH", nota_pedir: "Envoie ton replay Fightcade à RetaBot sur Telegram. Chaque vidéo est vérifiée par l'admin avant publication. SNES indisponible pour le moment.",
+        pedir: "DEMANDE TON MATCH", nota_pedir: "Envoie ton replay Fightcade à RetaBot sur Telegram. Chaque vidéo est vérifiée par l'admin avant publication. 30 minutes maximum par vidéo. SNES indisponible pour le moment.",
+        ver_faq: "Questions fréquentes", faq_titulo: "QUESTIONS FREQUENTES", faq_p1: "Comment demander un match ?", faq_r1: "Ouvre le replay dans Fightcade, copie son lien (https://replay.fightcade.com/...) et colle-le à RetaBot sur Telegram ou sur le Discord de la chaîne, un par message.", faq_p2: "Quelle durée maximum ?", faq_r2: "30 minutes maximum par vidéo. Les matchs plus longs ne sont pas enregistrés et RetaBot te prévient.", faq_p3: "Quels jeux peut-on demander ?", faq_r3: "Ceux de FBNeo et Flycast que l'enregistreur possède. Le SNES n'est pas disponible pour le moment.", faq_p4: "Quand ma vidéo sort-elle ?", faq_r4: "L'admin vérifie chaque vidéo avant publication et RetaBot te prévient quand elle sort. Sur Telegram, /status montre où en sont tes matchs.", faq_p5: "Un problème ou une idée ?", faq_r5: "Envoie à RetaBot /feedback et ton message (sur Discord, !feedback).",
         lema: "MATCHS FIGHTCADE · PUR ARCADE", retas: "MATCHS", reta1: "MATCH", juegos: "JEUX", jugadores: "JOUEURS",
         canal: "VOIR SUR YOUTUBE", elige: "CHOISIS TON JEU", ant: "< RETOUR", sig: "SUITE >", cargando: "CHARGEMENT...",
         nada: "AUCUN MATCH NE CORRESPOND<br>ESSAIE UN AUTRE JOUEUR OU JEU", vacio: "PAS ENCORE DE MATCHS",
