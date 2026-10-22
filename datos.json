@@ -1,6 +1,40 @@
 {
- "actualizado": 1792696938,
+ "actualizado": 1792708641,
  "retas": [
+  {
+   "id": "1792644245207-2118",
+   "juego": "Super Street Fighter II X",
+   "p1": "LetsWatchTheMovie",
+   "p2": "Salox78",
+   "p1rango": "D",
+   "p2rango": "C",
+   "p1pais": "US",
+   "p2pais": "MX",
+   "p1pj": "Dhalsim",
+   "p2pj": "Guile",
+   "ft": "FT2",
+   "dur": 226,
+   "yt": "zAjoc5IPiac",
+   "corto": "rpkEuGSzIBc",
+   "subido": 1792708474
+  },
+  {
+   "id": "1792643627576-6393",
+   "juego": "Super Street Fighter II X",
+   "p1": "0MNI",
+   "p2": "Salox78",
+   "p1rango": "?",
+   "p2rango": "C",
+   "p1pais": "US",
+   "p2pais": "MX",
+   "p1pj": "E.Honda",
+   "p2pj": "Guile",
+   "ft": "VS",
+   "dur": 543,
+   "yt": "yBUSL_NLG48",
+   "corto": "zbdZwSXwAhw",
+   "subido": 1792707836
+  },
   {
    "id": "1792660240241-6384",
    "juego": "Street Fighter III: 3rd Strike",
