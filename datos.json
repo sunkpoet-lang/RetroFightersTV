@@ -1,6 +1,23 @@
 {
- "actualizado": 1792719438,
+ "actualizado": 1792721238,
  "retas": [
+  {
+   "id": "1790513310872-4658",
+   "juego": "Super Street Fighter II X",
+   "p1": "ryu_sirovega",
+   "p2": "THE-AHO",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "JP",
+   "p2pais": "JP",
+   "p1pj": "M.Bison (Dictator)",
+   "p2pj": "E.Honda",
+   "ft": "FT3",
+   "dur": 427,
+   "yt": "kt1pbvq58Dc",
+   "corto": "hgGiZcTN3z8",
+   "subido": 1792720566
+  },
   {
    "id": "1792704522114-1922",
    "juego": "Super Street Fighter II X",
