@@ -1,6 +1,23 @@
 {
- "actualizado": 1792777038,
+ "actualizado": 1792778838,
  "retas": [
+  {
+   "id": "1792381078205-5010",
+   "juego": "Street Fighter II Hyper Fighting",
+   "p1": "KnockTsuKow",
+   "p2": "ChoiBoy",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT3",
+   "dur": 496,
+   "yt": "WizsxnOgBw0",
+   "corto": "D163kMrnT8I",
+   "subido": 1792778680
+  },
   {
    "id": "1792193985974-9299",
    "juego": "Garou: Mark of the Wolves",
