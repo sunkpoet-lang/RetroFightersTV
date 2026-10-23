@@ -1,6 +1,23 @@
 {
- "actualizado": 1792708641,
+ "actualizado": 1792714040,
  "retas": [
+  {
+   "id": "1792458011538-2477",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "Cald3ron",
+   "p2": "[SEBA]",
+   "p1rango": "S",
+   "p2rango": "S",
+   "p1pais": "CL",
+   "p2pais": "CL",
+   "p1pj": "Chun-Li",
+   "p2pj": "Yun",
+   "ft": "FT5",
+   "dur": 1103,
+   "yt": "gEGw9Ao3_sc",
+   "corto": "lNJNfuXeoG0",
+   "subido": 1792713710
+  },
   {
    "id": "1792644245207-2118",
    "juego": "Super Street Fighter II X",
