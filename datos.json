@@ -1,6 +1,23 @@
 {
- "actualizado": 1792721238,
+ "actualizado": 1792723938,
  "retas": [
+  {
+   "id": "1792117905374-3017",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "MiBSF2CE-TV",
+   "p2": "DJILK",
+   "p1rango": "S",
+   "p2rango": "A",
+   "p1pais": "BR",
+   "p2pais": "US",
+   "p1pj": "M.Bison (Dictator)",
+   "p2pj": "Ryu",
+   "ft": "FT5",
+   "dur": 662,
+   "yt": "wtSGoI1DrdY",
+   "corto": "QA14faMEz7s",
+   "subido": 1792723218
+  },
   {
    "id": "1790513310872-4658",
    "juego": "Super Street Fighter II X",
