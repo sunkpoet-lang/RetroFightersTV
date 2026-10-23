@@ -1,6 +1,23 @@
 {
- "actualizado": 1792771638,
+ "actualizado": 1792772538,
  "retas": [
+  {
+   "id": "1792355370876-3154",
+   "juego": "Street Fighter Alpha 3",
+   "p1": "Salt_Ver",
+   "p2": "REV | Carlota",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "CL",
+   "p2pais": "BR",
+   "p1pj": "Blanka",
+   "p2pj": "M.Bison",
+   "ft": "FT5",
+   "dur": 493,
+   "yt": "oWxmseKLxSs",
+   "corto": "WithUscLSk8",
+   "subido": 1792772424
+  },
   {
    "id": "1792717178704-4670",
    "juego": "The King of Fighters 2002",
