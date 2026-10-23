@@ -1,6 +1,23 @@
 {
- "actualizado": 1792784238,
+ "actualizado": 1792786938,
  "retas": [
+  {
+   "id": "1792729945244-6114",
+   "juego": "Marvel vs. Capcom",
+   "p1": "Robot_Chicken_",
+   "p2": "DRPEPPER",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "MX",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 591,
+   "yt": "yvzdDVJdMwk",
+   "corto": "vMWKwTgC9aI",
+   "subido": 1792786662
+  },
   {
    "id": "1792713780660-7271",
    "juego": "Mortal Kombat II",
