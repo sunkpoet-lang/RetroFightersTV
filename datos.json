@@ -1,6 +1,23 @@
 {
- "actualizado": 1792781538,
+ "actualizado": 1792782438,
  "retas": [
+  {
+   "id": "1792641812597-1827",
+   "juego": "Mortal Kombat II",
+   "p1": "Rivo",
+   "p2": "TurboMK40",
+   "p1rango": "A",
+   "p2rango": "C",
+   "p1pais": "AR",
+   "p2pais": "CL",
+   "p1pj": "Jax",
+   "p2pj": "Jax",
+   "ft": "FT5",
+   "dur": 326,
+   "yt": "5E0ALG3YP_E",
+   "corto": "hCaQN987XU8",
+   "subido": 1792781645
+  },
   {
    "id": "1792625842599-8045",
    "juego": "Ultimate Mortal Kombat 3",
