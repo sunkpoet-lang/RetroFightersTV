@@ -1,6 +1,40 @@
 {
- "actualizado": 1792955239,
+ "actualizado": 1792959739,
  "retas": [
+  {
+   "id": "1792696774652-5360",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "Destur",
+   "p2": "BachataHero",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "TR",
+   "p2pais": "TR",
+   "p1pj": "M.Bison (Dictator)",
+   "p2pj": "Guile",
+   "ft": "FT5",
+   "dur": 874,
+   "yt": "EqDqi5VP2q0",
+   "corto": "hgNRrYDa8Ak",
+   "subido": 1792959595
+  },
+  {
+   "id": "1792859336727-3141",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "DJILK",
+   "p2": "left4rcade-tv",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "US",
+   "p2pais": "TR",
+   "p1pj": "Ryu",
+   "p2pj": "Balrog (Boxer)",
+   "ft": "FT5",
+   "dur": 656,
+   "yt": "R8zv8aWulB8",
+   "corto": "gTY8zZcLlo8",
+   "subido": 1792959542
+  },
   {
    "id": "1792853759110-5182",
    "juego": "Super Street Fighter II X",
