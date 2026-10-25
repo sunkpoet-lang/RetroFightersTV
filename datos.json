@@ -1,6 +1,23 @@
 {
- "actualizado": 1792954339,
+ "actualizado": 1792955239,
  "retas": [
+  {
+   "id": "1792853759110-5182",
+   "juego": "Super Street Fighter II X",
+   "p1": "ZOOLANDER",
+   "p2": "MegamanX-8",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "Dee Jay",
+   "p2pj": "Zangief",
+   "ft": "FT5",
+   "dur": 470,
+   "yt": "gBaG3buHoAw",
+   "corto": "6hAhMe7d82E",
+   "subido": 1792954649
+  },
   {
    "id": "1792521083279-7551",
    "juego": "Super Street Fighter II X",
