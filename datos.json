@@ -1,6 +1,23 @@
 {
- "actualizado": 1792959739,
+ "actualizado": 1792961543,
  "retas": [
+  {
+   "id": "1792709251503-4574",
+   "juego": "Garou: Mark of the Wolves",
+   "p1": "MateusBarao",
+   "p2": "WhiteGriffith",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "BR",
+   "p2pais": "US",
+   "p1pj": "Gato",
+   "p2pj": "Freeman",
+   "ft": "FT5",
+   "dur": 675,
+   "yt": "v4zwS2bAqI0",
+   "corto": "Bcupl9IqpBo",
+   "subido": 1792960743
+  },
   {
    "id": "1792696774652-5360",
    "juego": "Street Fighter II Champion Edition",
