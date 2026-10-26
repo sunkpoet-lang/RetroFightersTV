@@ -1,6 +1,23 @@
 {
- "actualizado": 1793034438,
+ "actualizado": 1793056947,
  "retas": [
+  {
+   "id": "1793052655136-1655",
+   "juego": "Super Street Fighter II X",
+   "p1": "stevetren",
+   "p2": "djfrijoles",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "US",
+   "p2pais": "MX",
+   "p1pj": "Ryu",
+   "p2pj": "T.Hawk",
+   "ft": "FT5",
+   "dur": 809,
+   "yt": "oKThpyeIq9Y",
+   "corto": "TgHclnHVYkE",
+   "subido": 1793056070
+  },
   {
    "id": "1791949754050-1207",
    "juego": "Garou: Mark of the Wolves",
