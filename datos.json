@@ -1,6 +1,40 @@
 {
- "actualizado": 1793571739,
+ "actualizado": 1793574439,
  "retas": [
+  {
+   "id": "1793429779813-9009",
+   "juego": "The King of Fighters '98",
+   "p1": "mirza mudassar",
+   "p2": "3715",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "PK",
+   "p2pais": "PK",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT2",
+   "dur": 359,
+   "yt": "58csau9bmUA",
+   "corto": "5TKMHWsC2ys",
+   "subido": 1793573849
+  },
+  {
+   "id": "1792963746645-7776",
+   "juego": "The King of Fighters 2002",
+   "p1": "Drinkteam-john",
+   "p2": "ANLLELO",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "MX",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 498,
+   "yt": "Ij98Kc0pcaw",
+   "corto": "w2-B0SfkDBA",
+   "subido": 1793573830
+  },
   {
    "id": "1793473567987-9396",
    "juego": "Garou: Mark of the Wolves",
