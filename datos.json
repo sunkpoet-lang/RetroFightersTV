@@ -1,6 +1,40 @@
 {
- "actualizado": 1793589738,
+ "actualizado": 1793594251,
  "retas": [
+  {
+   "id": "1793235264410-6342",
+   "juego": "Street Fighter II Hyper Fighting",
+   "p1": "Loboesteparius",
+   "p2": "DJILK",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 472,
+   "yt": "1g4lmL0aLn8",
+   "corto": "lfZb2WxJvSY",
+   "subido": 1793594075
+  },
+  {
+   "id": "1793428134632-8451",
+   "juego": "The King of Fighters 2002",
+   "p1": "[CSK] TZK CAMARON",
+   "p2": "Sean Bounge",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "MX",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 772,
+   "yt": "Dj2AN0epD1o",
+   "corto": "MCjPXBBVLck",
+   "subido": 1793593662
+  },
   {
    "id": "1676318717905-7428",
    "juego": "Super Street Fighter II X",
