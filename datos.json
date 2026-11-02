@@ -1,6 +1,23 @@
 {
- "actualizado": 1793578039,
+ "actualizado": 1793579839,
  "retas": [
+  {
+   "id": "1792981100818-5106",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "MiBSF2CE-TV-1",
+   "p2": "DJILK",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "BR",
+   "p2pais": "US",
+   "p1pj": "Blanka",
+   "p2pj": "Ryu",
+   "ft": "FT5",
+   "dur": 735,
+   "yt": "ZXikkzRWZ-M",
+   "corto": "2E_2ukcdLgQ",
+   "subido": 1793579793
+  },
   {
    "id": "1793471768319-7682",
    "juego": "Street Fighter II Champion Edition",
