@@ -1,6 +1,40 @@
 {
- "actualizado": 1793653638,
+ "actualizado": 1793668040,
  "retas": [
+  {
+   "id": "1793250297051-5691",
+   "juego": "The King of Fighters 2002 Plus",
+   "p1": "unused",
+   "p2": "Test_King",
+   "p1rango": "S",
+   "p2rango": "S",
+   "p1pais": "BD",
+   "p2pais": "BD",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT2",
+   "dur": 435,
+   "yt": "3-iKKwQBN1c",
+   "corto": "qh6__z9sIWc",
+   "subido": 1793667875
+  },
+  {
+   "id": "1793084651258-7637",
+   "juego": "The King of Fighters 2002",
+   "p1": "Elvisioso",
+   "p2": "Drinkteam-john",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "MX",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 125,
+   "yt": "tYZEae-iQj8",
+   "corto": "BQnSFKuSO6E",
+   "subido": 1793667813
+  },
   {
    "id": "1789872524872-7979",
    "juego": "Super Street Fighter II X",
