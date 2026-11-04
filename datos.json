@@ -1,6 +1,40 @@
 {
- "actualizado": 1793756240,
+ "actualizado": 1793760738,
  "retas": [
+  {
+   "id": "1793746579898-2580",
+   "juego": "Super Street Fighter II X",
+   "p1": "albertron RD",
+   "p2": "ThebossRD",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "DO",
+   "p2pais": "DO",
+   "p1pj": "E.Honda",
+   "p2pj": "Balrog (Boxer)",
+   "ft": "VS",
+   "dur": 495,
+   "yt": "iPdTlxDlGoI",
+   "corto": "4jX6EI5octI",
+   "subido": 1793760485
+  },
+  {
+   "id": "1793501214377-6251",
+   "juego": "Marvel vs. Capcom 2",
+   "p1": "yujiro _hanma",
+   "p2": "SouthpawRock",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT3",
+   "dur": 810,
+   "yt": "kIdbTT1dU1w",
+   "corto": "7oEg2mlmnyY",
+   "subido": 1793760424
+  },
   {
    "id": "1793473478506-5364",
    "juego": "Street Fighter III: 3rd Strike",
