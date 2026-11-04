@@ -1,6 +1,23 @@
 {
- "actualizado": 1793729241,
+ "actualizado": 1793752640,
  "retas": [
+  {
+   "id": "1793715814128-5954",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "Otana",
+   "p2": "Harmonaz",
+   "p1rango": "S",
+   "p2rango": "A",
+   "p1pais": "FR",
+   "p2pais": "GB",
+   "p1pj": "Ken",
+   "p2pj": "Akuma",
+   "ft": "FT3",
+   "dur": 373,
+   "yt": "TXJvLHaStHU",
+   "corto": "eSMG59zEP4g",
+   "subido": 1793752603
+  },
   {
    "id": "1765676119513-7464",
    "juego": "Super Street Fighter II X",
