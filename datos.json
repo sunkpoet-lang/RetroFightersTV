@@ -1,6 +1,40 @@
 {
- "actualizado": 1793813838,
+ "actualizado": 1793817439,
  "retas": [
+  {
+   "id": "1742743003438-5895",
+   "juego": "Super Street Fighter II X",
+   "p1": "ThebossRD",
+   "p2": "ultrayox",
+   "p1rango": "C",
+   "p2rango": "B",
+   "p1pais": "DO",
+   "p2pais": "MX",
+   "p1pj": "Balrog (Boxer)",
+   "p2pj": "Chun Li",
+   "ft": "FT5",
+   "dur": 505,
+   "yt": "9FnL9TsU2_Q",
+   "corto": "SzoS3isw4oA",
+   "subido": 1793817375
+  },
+  {
+   "id": "1793685422292-2371",
+   "juego": "Super Street Fighter II X",
+   "p1": "_yito2k_",
+   "p2": "KELA420",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "MX",
+   "p1pj": "M.Bison (Dictator)",
+   "p2pj": "Ryu",
+   "ft": "FT5",
+   "dur": 294,
+   "yt": "UxtG3rnrlVA",
+   "corto": "A3m78VVWliI",
+   "subido": 1793817307
+  },
   {
    "id": "1746926887289-8842",
    "juego": "Super Street Fighter II X",
