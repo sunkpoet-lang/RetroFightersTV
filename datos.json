@@ -1,6 +1,23 @@
 {
- "actualizado": 1793817439,
+ "actualizado": 1793821040,
  "retas": [
+  {
+   "id": "1793162722947-6843",
+   "juego": "Super Street Fighter II X",
+   "p1": "Moe_Powell",
+   "p2": "F.A.Q",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "CA",
+   "p2pais": "MX",
+   "p1pj": "Blanka",
+   "p2pj": "Vega (Claw)",
+   "ft": "FT5",
+   "dur": 695,
+   "yt": "fq8Nf_V5ZAc",
+   "corto": "ZobYqPw6Lvo",
+   "subido": 1793820909
+  },
   {
    "id": "1742743003438-5895",
    "juego": "Super Street Fighter II X",
