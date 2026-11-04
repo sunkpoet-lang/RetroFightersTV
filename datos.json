@@ -1,6 +1,23 @@
 {
- "actualizado": 1793752640,
+ "actualizado": 1793756240,
  "retas": [
+  {
+   "id": "1793473478506-5364",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "TheKingOfThirdStrike",
+   "p2": "ofresco2",
+   "p1rango": "S",
+   "p2rango": "A",
+   "p1pais": "FR",
+   "p2pais": "ES",
+   "p1pj": "Chun-Li",
+   "p2pj": "Ibuki",
+   "ft": "FT5",
+   "dur": 854,
+   "yt": "xe8kXAGfNvk",
+   "corto": "te1YyemS4dY",
+   "subido": 1793755646
+  },
   {
    "id": "1793715814128-5954",
    "juego": "Street Fighter III: 3rd Strike",
