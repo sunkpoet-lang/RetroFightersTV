@@ -1,6 +1,23 @@
 {
- "actualizado": 1793899338,
+ "actualizado": 1793900238,
  "retas": [
+  {
+   "id": "1793313684361-8392",
+   "juego": "Super Street Fighter II X",
+   "p1": "GaloDiaz",
+   "p2": "MegamanX-8",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "E.Honda",
+   "p2pj": "Zangief",
+   "ft": "FT5",
+   "dur": 577,
+   "yt": "33nzX3LZJHQ",
+   "corto": "mBJQTTBqgcM",
+   "subido": 1793900210
+  },
   {
    "id": "1780255441881-2279",
    "juego": "Super Street Fighter II X",
