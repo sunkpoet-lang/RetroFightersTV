@@ -1,6 +1,23 @@
 {
- "actualizado": 1793896638,
+ "actualizado": 1793898438,
  "retas": [
+  {
+   "id": "1780255441881-2279",
+   "juego": "Super Street Fighter II X",
+   "p1": "RAC | Flavio.Ryu",
+   "p2": "MegamanX-8",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "BR",
+   "p2pais": "US",
+   "p1pj": "Ryu",
+   "p2pj": "Zangief",
+   "ft": "FT5",
+   "dur": 700,
+   "yt": "WJ1icWckpbQ",
+   "corto": "",
+   "subido": 1793898438
+  },
   {
    "id": "1793890505300-4080",
    "juego": "Street Fighter II Champion Edition",
