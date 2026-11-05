@@ -1,6 +1,23 @@
 {
- "actualizado": 1793837238,
+ "actualizado": 1793848038,
  "retas": [
+  {
+   "id": "1793672928787-8307",
+   "juego": "Mortal Kombat II",
+   "p1": "Antwaan_Randle_El",
+   "p2": "SenzoTanaka",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "Jax",
+   "p2pj": "Shang Tsung",
+   "ft": "FT5",
+   "dur": 583,
+   "yt": "H_dkhqVe4pw",
+   "corto": "9lUt-_H3Qcc",
+   "subido": 1793847746
+  },
   {
    "id": "1793834529063-5966",
    "juego": "Street Fighter III: 3rd Strike",
