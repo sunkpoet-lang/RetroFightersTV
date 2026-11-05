@@ -1,6 +1,23 @@
 {
- "actualizado": 1793852538,
+ "actualizado": 1793862438,
  "retas": [
+  {
+   "id": "1793476304961-7763",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "Bloodrun",
+   "p2": "Omelas",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "TR",
+   "p2pais": "TR",
+   "p1pj": "Sagat",
+   "p2pj": "M.Bison (Dictator)",
+   "ft": "FT3",
+   "dur": 436,
+   "yt": "wgZ2ZZkNTGM",
+   "corto": "rymtjLfWI4g",
+   "subido": 1793862330
+  },
   {
    "id": "1793390587298-9719",
    "juego": "Street Fighter II Champion Edition",
