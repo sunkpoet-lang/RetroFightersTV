@@ -1,6 +1,23 @@
 {
- "actualizado": 1793987541,
+ "actualizado": 1793989338,
  "retas": [
+  {
+   "id": "1661886822553-6317",
+   "juego": "Super Street Fighter II X",
+   "p1": "Zagi",
+   "p2": "kazel",
+   "p1rango": "S",
+   "p2rango": "A",
+   "p1pais": "FR",
+   "p2pais": "FR",
+   "p1pj": "Chun Li",
+   "p2pj": "T.Hawk",
+   "ft": "FT3",
+   "dur": 370,
+   "yt": "NdhrgYUoRKw",
+   "corto": "52nbJvRRFV0",
+   "subido": 1793989160
+  },
   {
    "id": "1793801017608-6194",
    "juego": "Super Street Fighter II X",
