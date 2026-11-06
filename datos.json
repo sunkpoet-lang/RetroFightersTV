@@ -1,6 +1,40 @@
 {
- "actualizado": 1793942540,
+ "actualizado": 1793987541,
  "retas": [
+  {
+   "id": "1793801017608-6194",
+   "juego": "Super Street Fighter II X",
+   "p1": "ara@VF2",
+   "p2": "Xak",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "JP",
+   "p2pais": "JP",
+   "p1pj": "E.Honda",
+   "p2pj": "Dhalsim",
+   "ft": "FT5",
+   "dur": 790,
+   "yt": "g48_8-FJFiQ",
+   "corto": "bibnILb27zk",
+   "subido": 1793987405
+  },
+  {
+   "id": "1790805180660-8824",
+   "juego": "Super Street Fighter II X",
+   "p1": "kazel",
+   "p2": "training12",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "FR",
+   "p2pais": "BE",
+   "p1pj": "Dee Jay",
+   "p2pj": "Ken",
+   "ft": "FT5",
+   "dur": 273,
+   "yt": "jL-uNRKshXw",
+   "corto": "Igo7UWUDar4",
+   "subido": 1793987257
+  },
   {
    "id": "1793935440455-1210",
    "juego": "Super Street Fighter II X",
