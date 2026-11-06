@@ -1,6 +1,23 @@
 {
- "actualizado": 1793992938,
+ "actualizado": 1793995638,
  "retas": [
+  {
+   "id": "1793386204606-5589",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "BachataHero",
+   "p2": "show_no_mercy",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "TR",
+   "p2pais": "TR",
+   "p1pj": "Guile",
+   "p2pj": "Sagat",
+   "ft": "FT5",
+   "dur": 780,
+   "yt": "NxRUL0pUvZE",
+   "corto": "Q5_fNiOpOro",
+   "subido": 1793995470
+  },
   {
    "id": "1793696450429-9521",
    "juego": "Street Fighter III: 3rd Strike",
