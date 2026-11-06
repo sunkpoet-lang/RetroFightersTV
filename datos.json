@@ -1,6 +1,23 @@
 {
- "actualizado": 1794001041,
+ "actualizado": 1794002839,
  "retas": [
+  {
+   "id": "1793946861143-3851",
+   "juego": "Super Street Fighter II X",
+   "p1": "Rotoplas",
+   "p2": "Fi3r0",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "MX",
+   "p1pj": "Zangief",
+   "p2pj": "Blanka",
+   "ft": "FT5",
+   "dur": 748,
+   "yt": "Bf6LHfkfJMA",
+   "corto": "CTlhTVErN3g",
+   "subido": 1794002144
+  },
   {
    "id": "1793811295362-9701",
    "juego": "Street Fighter II Champion Edition",
