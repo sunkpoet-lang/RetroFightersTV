@@ -1,6 +1,40 @@
 {
- "actualizado": 1794167539,
+ "actualizado": 1794168440,
  "retas": [
+  {
+   "id": "1793911818464-3391",
+   "juego": "The King of Fighters 2002 Plus",
+   "p1": "King-Yagami",
+   "p2": "z00m..",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "PK",
+   "p2pais": "DZ",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT2",
+   "dur": 225,
+   "yt": "3CRbsjiAXHc",
+   "corto": "-yvcEOlnx5o",
+   "subido": 1794168241
+  },
+  {
+   "id": "1793761829217-1621",
+   "juego": "The King of Fighters 2002 Plus",
+   "p1": "[SKM] KUNO",
+   "p2": "[KiNG]-[ARG]-BRUNO",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "AR",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 788,
+   "yt": "8Ui93-0Iz9g",
+   "corto": "QShtcfAXb1w",
+   "subido": 1794168207
+  },
   {
    "id": "1794002459879-3725",
    "juego": "Street Fighter Alpha 3",
