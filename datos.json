@@ -1,6 +1,40 @@
 {
- "actualizado": 1794100039,
+ "actualizado": 1794101839,
  "retas": [
+  {
+   "id": "1794091948341-4405",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "JaiWhite",
+   "p2": "Nosferatu",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "NL",
+   "p2pais": "NL",
+   "p1pj": "Ryu",
+   "p2pj": "Ken",
+   "ft": "FT3",
+   "dur": 354,
+   "yt": "hT2kJbBqYGA",
+   "corto": "SK4OzauU7xk",
+   "subido": 1794101668
+  },
+  {
+   "id": "1793880504014-4042",
+   "juego": "The King of Fighters 2002",
+   "p1": "real_timothy",
+   "p2": "nebure!456",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "HK",
+   "p2pais": "JP",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 1041,
+   "yt": "8jz_MsVAQYw",
+   "corto": "ElKQylQ1wZI",
+   "subido": 1794101337
+  },
   {
    "id": "1793678293677-7267",
    "juego": "The King of Fighters 2002",
