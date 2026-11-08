@@ -1,6 +1,40 @@
 {
- "actualizado": 1794106341,
+ "actualizado": 1794109939,
  "retas": [
+  {
+   "id": "1794101091924-3760",
+   "juego": "Super Street Fighter II X",
+   "p1": "hassasin10",
+   "p2": "zZYXx",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Cammy",
+   "p2pj": "Balrog (Boxer)",
+   "ft": "FT5",
+   "dur": 667,
+   "yt": "hJTp_i3QCeU",
+   "corto": "aogbFun5Ao0",
+   "subido": 1794109750
+  },
+  {
+   "id": "1602884860240-5922",
+   "juego": "Super Street Fighter II X",
+   "p1": "dollhouse",
+   "p2": "LeRaldo",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "JP",
+   "p2pais": "US",
+   "p1pj": "Vega (Claw)",
+   "p2pj": "Sagat",
+   "ft": "FT5",
+   "dur": 624,
+   "yt": "cbBc3PyhzS8",
+   "corto": "XWw_qUzIMR8",
+   "subido": 1794109729
+  },
   {
    "id": "1695411648868-8238",
    "juego": "The King of Fighters '98",
