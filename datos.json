@@ -1,6 +1,23 @@
 {
- "actualizado": 1794095539,
+ "actualizado": 1794100039,
  "retas": [
+  {
+   "id": "1793678293677-7267",
+   "juego": "The King of Fighters 2002",
+   "p1": "Drinkteam-john",
+   "p2": "mtwkof",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "PE",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 968,
+   "yt": "p7X28Q1IGW4",
+   "corto": "CYHpRYa0uVo",
+   "subido": 1794099499
+  },
   {
    "id": "1752412417298-6823",
    "juego": "Super Street Fighter II X",
