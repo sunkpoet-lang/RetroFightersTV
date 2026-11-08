@@ -1,6 +1,23 @@
 {
- "actualizado": 1794104539,
+ "actualizado": 1794105441,
  "retas": [
+  {
+   "id": "1691082176911-9009",
+   "juego": "The King of Fighters '98",
+   "p1": "Mirza2002Champ",
+   "p2": "Mundo Kurono",
+   "p1rango": "S",
+   "p2rango": "S",
+   "p1pais": "PK",
+   "p2pais": "CL",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT2",
+   "dur": 538,
+   "yt": "9C_CNPhIwcE",
+   "corto": "_8iEVzrmvFg",
+   "subido": 1794104718
+  },
   {
    "id": "1794091795230-9135",
    "juego": "Street Fighter III: 3rd Strike",
