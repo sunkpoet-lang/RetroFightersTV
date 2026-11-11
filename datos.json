@@ -1,6 +1,40 @@
 {
- "actualizado": 1794434839,
+ "actualizado": 1794436638,
  "retas": [
+  {
+   "id": "1794082643021-4374",
+   "juego": "Super Street Fighter II X",
+   "p1": "stevetren",
+   "p2": "RenoMD",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "Ryu",
+   "p2pj": "M.Bison (Dictator)",
+   "ft": "FT5",
+   "dur": 472,
+   "yt": "eQd72NRM7lU",
+   "corto": "WMQ61ELHtIk",
+   "subido": 1794436442
+  },
+  {
+   "id": "1794341522609-2005",
+   "juego": "Super Street Fighter II X",
+   "p1": "Zombie_Damage",
+   "p2": "Grapplerbobby",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "Fei Long",
+   "p2pj": "Balrog (Boxer)",
+   "ft": "FT5",
+   "dur": 668,
+   "yt": "N8D5khK2sXU",
+   "corto": "GfUDCw-Pznw",
+   "subido": 1794436088
+  },
   {
    "id": "1793939703741-8846",
    "juego": "Super Street Fighter II X",
