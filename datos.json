@@ -1,6 +1,23 @@
 {
- "actualizado": 1794170238,
+ "actualizado": 1794417738,
  "retas": [
+  {
+   "id": "1794233396727-8156",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "TheDoomBot2",
+   "p2": "Acolhuuua",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "GB",
+   "p2pais": "ES",
+   "p1pj": "Dudley",
+   "p2pj": "Ryu",
+   "ft": "VS",
+   "dur": 1438,
+   "yt": "ZK1SFANG9AQ",
+   "corto": "rxZLOrFO-mE",
+   "subido": 1794417495
+  },
   {
    "id": "1794083854331-4075",
    "juego": "The King of Fighters 2002 Plus",
