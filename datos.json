@@ -1,6 +1,23 @@
 {
- "actualizado": 1794507738,
+ "actualizado": 1794509539,
  "retas": [
+  {
+   "id": "1794066802561-5223",
+   "juego": "Super Street Fighter II X",
+   "p1": "HT1994.",
+   "p2": "training12",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "FR",
+   "p2pais": "BE",
+   "p1pj": "Balrog (Boxer)",
+   "p2pj": "Ken",
+   "ft": "FT5",
+   "dur": 463,
+   "yt": "zJnDfMTd4GQ",
+   "corto": "MzujxV00Dbk",
+   "subido": 1794509204
+  },
   {
    "id": "1762315112370-2921",
    "juego": "Marvel vs. Capcom 2",
