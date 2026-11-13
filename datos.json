@@ -1,6 +1,23 @@
 {
- "actualizado": 1794594139,
+ "actualizado": 1794595038,
  "retas": [
+  {
+   "id": "1794150673096-9274",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "DJILK",
+   "p2": "SIRAMOOREN",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "KR",
+   "p1pj": "Ryu",
+   "p2pj": "Chun Li",
+   "ft": "FT5",
+   "dur": 393,
+   "yt": "D2Br5EAsS7s",
+   "corto": "Y6sLVLYmNn4",
+   "subido": 1794594532
+  },
   {
    "id": "1794334594025-2993",
    "juego": "Street Fighter II Champion Edition",
