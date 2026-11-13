@@ -1,6 +1,23 @@
 {
- "actualizado": 1794600438,
+ "actualizado": 1794605841,
  "retas": [
+  {
+   "id": "1794517138719-7304",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "TenRUN",
+   "p2": "12oser",
+   "p1rango": "S",
+   "p2rango": "S",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "Ibuki",
+   "p2pj": "Dudley",
+   "ft": "FT5",
+   "dur": 550,
+   "yt": "htjVFTaumJE",
+   "corto": "ubW0o7v6Z7Y",
+   "subido": 1794605835
+  },
   {
    "id": "1791742607492-9004",
    "juego": "Street Fighter II Champion Edition",
