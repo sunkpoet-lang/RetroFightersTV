@@ -1,6 +1,40 @@
 {
- "actualizado": 1794595038,
+ "actualizado": 1794600438,
  "retas": [
+  {
+   "id": "1791742607492-9004",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "((Caution))",
+   "p2": "Cute Hannah",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "BR",
+   "p2pais": "US",
+   "p1pj": "M.Bison (Dictator)",
+   "p2pj": "Guile",
+   "ft": "FT3",
+   "dur": 684,
+   "yt": "Dli30wlX5SA",
+   "corto": "K3TA6xHHbg8",
+   "subido": 1794599826
+  },
+  {
+   "id": "1648783309412-4479",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "Fuzil AK-47",
+   "p2": "Nostrax",
+   "p1rango": "S",
+   "p2rango": "B",
+   "p1pais": "BR",
+   "p2pais": "AR",
+   "p1pj": "M.Bison (Dictator)",
+   "p2pj": "Ryu",
+   "ft": "FT5",
+   "dur": 628,
+   "yt": "Ik3a7eUuPig",
+   "corto": "QdyrfMDNRto",
+   "subido": 1794599777
+  },
   {
    "id": "1794150673096-9274",
    "juego": "Street Fighter II Champion Edition",
