@@ -1,6 +1,40 @@
 {
- "actualizado": 1794523939,
+ "actualizado": 1794530239,
  "retas": [
+  {
+   "id": "1794408713834-1649",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "Dani Dani King Dani",
+   "p2": "SIRAMOOREN",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "KR",
+   "p2pais": "KR",
+   "p1pj": "M.Bison (Dictator)",
+   "p2pj": "Chun Li",
+   "ft": "FT3",
+   "dur": 501,
+   "yt": "HN0YHekbEAY",
+   "corto": "3jyN3zla5Gk",
+   "subido": 1794529664
+  },
+  {
+   "id": "1793996416968-4771",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "G0KTuG",
+   "p2": "BachataHero",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "TR",
+   "p2pais": "TR",
+   "p1pj": "Ken",
+   "p2pj": "Guile",
+   "ft": "FT5",
+   "dur": 978,
+   "yt": "L-4738uLNNU",
+   "corto": "u0ycGWuA8Fg",
+   "subido": 1794529616
+  },
   {
    "id": "1794051268109-8884",
    "juego": "Super Street Fighter II X",
