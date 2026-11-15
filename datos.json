@@ -1,6 +1,23 @@
 {
- "actualizado": 1794691339,
+ "actualizado": 1794721039,
  "retas": [
+  {
+   "id": "1794108549915-9211",
+   "juego": "Super Street Fighter II X",
+   "p1": "KELA420",
+   "p2": "znoopyglobal",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Ryu",
+   "p2pj": "Chun Li",
+   "ft": "FT5",
+   "dur": 820,
+   "yt": "siyL6uwOFSA",
+   "corto": "zIXcSLSr0yc",
+   "subido": 1794720605
+  },
   {
    "id": "1794319489802-9597",
    "juego": "Street Fighter III: 3rd Strike",
