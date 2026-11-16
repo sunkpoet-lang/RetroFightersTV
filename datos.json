@@ -1,6 +1,40 @@
 {
- "actualizado": 1794721039,
+ "actualizado": 1794793939,
  "retas": [
+  {
+   "id": "1606121769177-3855",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "bIack ken",
+   "p2": "NRG-Art",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "KR",
+   "p2pais": "KR",
+   "p1pj": "Ryu",
+   "p2pj": "M.Bison (Dictator)",
+   "ft": "FT3",
+   "dur": 423,
+   "yt": "wN76M0ickS4",
+   "corto": "jQHWLbd3Ec0",
+   "subido": 1794793728
+  },
+  {
+   "id": "1794180159467-4264",
+   "juego": "Super Street Fighter II X",
+   "p1": "IMP | Flavio.Ryu",
+   "p2": "Teacher Javy",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "BR",
+   "p2pais": "MX",
+   "p1pj": "Ryu",
+   "p2pj": "Zangief",
+   "ft": "FT5",
+   "dur": 919,
+   "yt": "4USzsdT0JEc",
+   "corto": "bxwZRW8nRdI",
+   "subido": 1794793268
+  },
   {
    "id": "1794108549915-9211",
    "juego": "Super Street Fighter II X",
