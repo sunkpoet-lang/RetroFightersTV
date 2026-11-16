@@ -1,6 +1,23 @@
 {
- "actualizado": 1794847938,
+ "actualizado": 1794848838,
  "retas": [
+  {
+   "id": "1662165310583-2751",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "donodamaquina",
+   "p2": "((Caution))",
+   "p1rango": "S",
+   "p2rango": "S",
+   "p1pais": "FR",
+   "p2pais": "BR",
+   "p1pj": "Ryu",
+   "p2pj": "M.Bison (Dictator)",
+   "ft": "FT3",
+   "dur": 287,
+   "yt": "0AT7FVBQIiQ",
+   "corto": "TD9y_rxs0kU",
+   "subido": 1794848784
+  },
   {
    "id": "1794535389053-8532",
    "juego": "Super Street Fighter II X",
