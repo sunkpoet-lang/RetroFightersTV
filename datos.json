@@ -1,6 +1,40 @@
 {
- "actualizado": 1794848838,
+ "actualizado": 1794852439,
  "retas": [
+  {
+   "id": "1645206745762-3173",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "Fuzil AK-47",
+   "p2": "BARATAK",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "BR",
+   "p2pais": "KR",
+   "p1pj": "M.Bison (Dictator)",
+   "p2pj": "Guile",
+   "ft": "FT3",
+   "dur": 593,
+   "yt": "Zdg5W535L5k",
+   "corto": "gE907P1JotA",
+   "subido": 1794852110
+  },
+  {
+   "id": "1666378201038-9815",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "jairodosteclados",
+   "p2": "((Firat))",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "BR",
+   "p2pais": "TR",
+   "p1pj": "M.Bison (Dictator)",
+   "p2pj": "M.Bison (Dictator)",
+   "ft": "FT3",
+   "dur": 509,
+   "yt": "SRjApKYAuLg",
+   "corto": "7gVnGwq2UQc",
+   "subido": 1794852007
+  },
   {
    "id": "1662165310583-2751",
    "juego": "Street Fighter II Champion Edition",
