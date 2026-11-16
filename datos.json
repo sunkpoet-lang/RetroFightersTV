@@ -1,6 +1,23 @@
 {
- "actualizado": 1794808338,
+ "actualizado": 1794810138,
  "retas": [
+  {
+   "id": "1794610788235-9171",
+   "juego": "Super Street Fighter II X",
+   "p1": "Zombie_Damage",
+   "p2": "stevetren",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "T.Hawk",
+   "p2pj": "Ryu",
+   "ft": "FT5",
+   "dur": 731,
+   "yt": "mWuIp3TV-yU",
+   "corto": "eAm-jp0HjQM",
+   "subido": 1794810024
+  },
   {
    "id": "1794463880308-2460",
    "juego": "The King of Fighters 2002 Plus",
