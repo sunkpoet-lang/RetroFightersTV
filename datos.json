@@ -1,6 +1,40 @@
 {
- "actualizado": 1794856939,
+ "actualizado": 1794859641,
  "retas": [
+  {
+   "id": "1794460226976-2568",
+   "juego": "Capcom vs. SNK 2",
+   "p1": "B_Rai83",
+   "p2": "Dnut999",
+   "p1rango": "C",
+   "p2rango": "B",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT2",
+   "dur": 739,
+   "yt": "v2BsFDjCjhk",
+   "corto": "qoyHLdO3NSo",
+   "subido": 1794859351
+  },
+  {
+   "id": "1794686429253-8873",
+   "juego": "Super Street Fighter II X",
+   "p1": "90s Arcade Player",
+   "p2": "Zagi",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "TR",
+   "p2pais": "FR",
+   "p1pj": "Vega (Claw)",
+   "p2pj": "Chun Li",
+   "ft": "FT5",
+   "dur": 593,
+   "yt": "QQE42ioC8-s",
+   "corto": "349eQ7wfwcw",
+   "subido": 1794859260
+  },
   {
    "id": "1794600502905-7527",
    "juego": "The King of Fighters '95",
