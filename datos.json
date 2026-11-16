@@ -1,6 +1,40 @@
 {
- "actualizado": 1794793939,
+ "actualizado": 1794808338,
  "retas": [
+  {
+   "id": "1794463880308-2460",
+   "juego": "The King of Fighters 2002 Plus",
+   "p1": "unused",
+   "p2": "TRAIN123",
+   "p1rango": "S",
+   "p2rango": "A",
+   "p1pais": "BD",
+   "p2pais": "BD",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT2",
+   "dur": 284,
+   "yt": "95H_kzxpgyQ",
+   "corto": "5EQJzhJSSlk",
+   "subido": 1794808310
+  },
+  {
+   "id": "1756839542128-1422",
+   "juego": "Super Street Fighter II X",
+   "p1": "SolidSRK",
+   "p2": "MegamanX-8",
+   "p1rango": "A",
+   "p2rango": "S",
+   "p1pais": "GB",
+   "p2pais": "US",
+   "p1pj": "Ryu",
+   "p2pj": "Zangief",
+   "ft": "FT5",
+   "dur": 809,
+   "yt": "SBazrn69DLo",
+   "corto": "1AOD8bMq3UU",
+   "subido": 1794808259
+  },
   {
    "id": "1606121769177-3855",
    "juego": "Street Fighter II Champion Edition",
