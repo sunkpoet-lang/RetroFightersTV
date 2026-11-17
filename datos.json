@@ -1,6 +1,23 @@
 {
- "actualizado": 1794949639,
+ "actualizado": 1794952339,
  "retas": [
+  {
+   "id": "1794946151804-3408",
+   "juego": "Super Street Fighter II X",
+   "p1": "MrGA II",
+   "p2": "DarkClaw X",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "PE",
+   "p1pj": "Ryu",
+   "p2pj": "Vega (Claw)",
+   "ft": "FT3",
+   "dur": 393,
+   "yt": "S-RvegpwhcE",
+   "corto": "AmOghopHwCA",
+   "subido": 1794952194
+  },
   {
    "id": "1794312475728-2701",
    "juego": "Street Fighter III: 3rd Strike",
