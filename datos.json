@@ -1,6 +1,40 @@
 {
- "actualizado": 1794952339,
+ "actualizado": 1794955938,
  "retas": [
+  {
+   "id": "1790288469358-2921",
+   "juego": "Super Street Fighter II X",
+   "p1": "H-Zero",
+   "p2": "znoopyglobal",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Sagat",
+   "p2pj": "Chun Li",
+   "ft": "FT5",
+   "dur": 676,
+   "yt": "TQ3EeLatFh8",
+   "corto": "mDMtZnFnsak",
+   "subido": 1794955466
+  },
+  {
+   "id": "1791650950110-7882",
+   "juego": "Super Street Fighter II X",
+   "p1": "stevetren",
+   "p2": "Fromo",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "Ryu",
+   "p2pj": "Blanka",
+   "ft": "FT5",
+   "dur": 595,
+   "yt": "laNlZs0sXwI",
+   "corto": "Lra151HFmjg",
+   "subido": 1794955393
+  },
   {
    "id": "1794946151804-3408",
    "juego": "Super Street Fighter II X",
