@@ -1,6 +1,23 @@
 {
- "actualizado": 1794859641,
+ "actualizado": 1794936316,
  "retas": [
+  {
+   "id": "1794491200361-2073",
+   "juego": "Super Street Fighter II X",
+   "p1": "Revolution98",
+   "p2": "retrogamemania",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "JP",
+   "p2pais": "JP",
+   "p1pj": "Chun Li",
+   "p2pj": "Ryu",
+   "ft": "FT5",
+   "dur": 803,
+   "yt": "cVoGMwe2UO0",
+   "corto": "D3YTo2uZnCs",
+   "subido": 1794935306
+  },
   {
    "id": "1794460226976-2568",
    "juego": "Capcom vs. SNK 2",
