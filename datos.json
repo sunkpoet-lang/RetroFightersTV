@@ -1,6 +1,23 @@
 {
- "actualizado": 1794964041,
+ "actualizado": 1794969450,
  "retas": [
+  {
+   "id": "1794632492608-1629",
+   "juego": "Super Street Fighter II X",
+   "p1": "mr spy",
+   "p2": "FACK !",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "MX",
+   "p1pj": "M.Bison (Dictator)",
+   "p2pj": "Vega (Claw)",
+   "ft": "FT5",
+   "dur": 864,
+   "yt": "iZ4Nyx2mwIg",
+   "corto": "tvRwRcG7C4I",
+   "subido": 1794968731
+  },
   {
    "id": "1794636802921-3516",
    "juego": "Super Street Fighter II X",
