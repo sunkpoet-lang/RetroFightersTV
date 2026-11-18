@@ -1,6 +1,40 @@
 {
- "actualizado": 1795028839,
+ "actualizado": 1795036938,
  "retas": [
+  {
+   "id": "1794742977795-7546",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "AydinOglu",
+   "p2": "yolcu",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "TR",
+   "p2pais": "TR",
+   "p1pj": "Ken",
+   "p2pj": "M.Bison (Dictator)",
+   "ft": "FT5",
+   "dur": 939,
+   "yt": "205q5MnjsKc",
+   "corto": "fI2ukoXLr54",
+   "subido": 1795036255
+  },
+  {
+   "id": "1794953829762-3229",
+   "juego": "Super Street Fighter II X",
+   "p1": "SPD4U",
+   "p2": "EVD",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "GB",
+   "p2pais": "FR",
+   "p1pj": "Zangief",
+   "p2pj": "Ken",
+   "ft": "FT5",
+   "dur": 907,
+   "yt": "7hzjs_6LC3Y",
+   "corto": "sDy3FpZKFT0",
+   "subido": 1795036254
+  },
   {
    "id": "1794627439035-8035",
    "juego": "Capcom vs. SNK 2",
