@@ -1,6 +1,40 @@
 {
- "actualizado": 1795026139,
+ "actualizado": 1795028839,
  "retas": [
+  {
+   "id": "1794627439035-8035",
+   "juego": "Capcom vs. SNK 2",
+   "p1": "vyckthor7",
+   "p2": "GuamBomb",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT2",
+   "dur": 923,
+   "yt": "uiKGEFd-pjk",
+   "corto": "QHtN9rj-k7c",
+   "subido": 1795028235
+  },
+  {
+   "id": "1794449693316-1319",
+   "juego": "Capcom vs. SNK 2",
+   "p1": "MiamiX-Alex",
+   "p2": "B_Rai83",
+   "p1rango": "B",
+   "p2rango": "C",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT3",
+   "dur": 671,
+   "yt": "_UUtJeyVKJo",
+   "corto": "tsAhQWU59ZY",
+   "subido": 1795028163
+  },
   {
    "id": "1794957083402-9006",
    "juego": "Street Fighter Alpha 3",
