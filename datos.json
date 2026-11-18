@@ -1,6 +1,40 @@
 {
- "actualizado": 1794976641,
+ "actualizado": 1795026139,
  "retas": [
+  {
+   "id": "1794957083402-9006",
+   "juego": "Street Fighter Alpha 3",
+   "p1": "MiamiX-Alex",
+   "p2": "Shadowonlive",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "BR",
+   "p1pj": "Sodom",
+   "p2pj": "Akuma",
+   "ft": "FT3",
+   "dur": 407,
+   "yt": "71MiqQrahws",
+   "corto": "7rEyeFvjszg",
+   "subido": 1795025918
+  },
+  {
+   "id": "1794639914158-8289",
+   "juego": "Super Street Fighter II X",
+   "p1": "Zombie_Damage",
+   "p2": "ChoiBoy",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "M.Bison (Dictator)",
+   "p2pj": "Balrog (Boxer)",
+   "ft": "FT5",
+   "dur": 648,
+   "yt": "YI6tBvdYxpU",
+   "corto": "OHSz-L8Qsi0",
+   "subido": 1795025863
+  },
   {
    "id": "1794773430672-1305",
    "juego": "Marvel vs. Capcom 2",
