@@ -1,6 +1,23 @@
 {
- "actualizado": 1795124242,
+ "actualizado": 1795126039,
  "retas": [
+  {
+   "id": "1794669460310-3591",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "Arcoilis",
+   "p2": "Johnny B bad",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "JP",
+   "p2pais": "JP",
+   "p1pj": "Yun",
+   "p2pj": "Dudley",
+   "ft": "FT5",
+   "dur": 504,
+   "yt": "7m7Rh7mWfB4",
+   "corto": "RDyfkYrBNUM",
+   "subido": 1795125905
+  },
   {
    "id": "1794458914504-9046",
    "juego": "Super Street Fighter II X",
