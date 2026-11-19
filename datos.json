@@ -1,6 +1,23 @@
 {
- "actualizado": 1795036938,
+ "actualizado": 1795122440,
  "retas": [
+  {
+   "id": "1794589557585-6677",
+   "juego": "Super Street Fighter II X",
+   "p1": "TheoryFighter",
+   "p2": "Zagi",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "GB",
+   "p2pais": "FR",
+   "p1pj": "Dee Jay",
+   "p2pj": "Chun Li",
+   "ft": "FT5",
+   "dur": 505,
+   "yt": "IogJw5nive8",
+   "corto": "aideLhv7YGM",
+   "subido": 1795122355
+  },
   {
    "id": "1794742977795-7546",
    "juego": "Street Fighter II Champion Edition",
