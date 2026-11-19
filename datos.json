@@ -1,6 +1,23 @@
 {
- "actualizado": 1795126039,
+ "actualizado": 1795128745,
  "retas": [
+  {
+   "id": "1794771645012-3506",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "BachataHero",
+   "p2": "TF/Pelondebrazzer",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "TR",
+   "p2pais": "MX",
+   "p1pj": "Guile",
+   "p2pj": "Vega (Claw)",
+   "ft": "FT5",
+   "dur": 680,
+   "yt": "nmsdHgBYRgc",
+   "corto": "m-Arv46YanI",
+   "subido": 1795128162
+  },
   {
    "id": "1794669460310-3591",
    "juego": "Street Fighter III: 3rd Strike",
