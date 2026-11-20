@@ -1,6 +1,40 @@
 {
- "actualizado": 1795194440,
+ "actualizado": 1795198940,
  "retas": [
+  {
+   "id": "1675829868960-2246",
+   "juego": "Super Street Fighter II X",
+   "p1": "SuperrV",
+   "p2": "_yito2k_",
+   "p1rango": "A",
+   "p2rango": "S",
+   "p1pais": "US",
+   "p2pais": "MX",
+   "p1pj": "Balrog (Boxer)",
+   "p2pj": "Dhalsim",
+   "ft": "FT5",
+   "dur": 985,
+   "yt": "D9d5-Qk75rs",
+   "corto": "eRVYMrbUpq4",
+   "subido": 1795198432
+  },
+  {
+   "id": "1611502901685-8969",
+   "juego": "The King of Fighters 2002",
+   "p1": "WolfBR",
+   "p2": "@MINEIRO@",
+   "p1rango": "S",
+   "p2rango": "B",
+   "p1pais": "BR",
+   "p2pais": "BR",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 837,
+   "yt": "WI3AMlsxSlc",
+   "corto": "amF2PA93pno",
+   "subido": 1795198431
+  },
   {
    "id": "1795187345241-2275",
    "juego": "Street Fighter III: 3rd Strike",
