@@ -1,6 +1,23 @@
 {
- "actualizado": 1795128745,
+ "actualizado": 1795135940,
  "retas": [
+  {
+   "id": "1795102310053-5317",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "Johnny B bad",
+   "p2": "Koushun",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "JP",
+   "p2pais": "JP",
+   "p1pj": "Dudley",
+   "p2pj": "Chun-Li",
+   "ft": "FT3",
+   "dur": 309,
+   "yt": "wT69Z4n9Qv8",
+   "corto": "3Bx8agnjVWM",
+   "subido": 1795135433
+  },
   {
    "id": "1794771645012-3506",
    "juego": "Street Fighter II Champion Edition",
