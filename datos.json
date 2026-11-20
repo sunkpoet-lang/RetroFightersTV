@@ -1,6 +1,23 @@
 {
- "actualizado": 1795135940,
+ "actualizado": 1795190838,
  "retas": [
+  {
+   "id": "1795186440261-9109",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "hayasi",
+   "p2": "decorator",
+   "p1rango": "C",
+   "p2rango": "A",
+   "p1pais": "JP",
+   "p2pais": "TW",
+   "p1pj": "Makoto",
+   "p2pj": "Yun",
+   "ft": "FT3",
+   "dur": 370,
+   "yt": "BwAnX-tS7-s",
+   "corto": "qzSS99omZMs",
+   "subido": 1795190767
+  },
   {
    "id": "1795102310053-5317",
    "juego": "Street Fighter III: 3rd Strike",
