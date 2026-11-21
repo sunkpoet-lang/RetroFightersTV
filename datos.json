@@ -1,6 +1,23 @@
 {
- "actualizado": 1795216938,
+ "actualizado": 1795223241,
  "retas": [
+  {
+   "id": "1795208639267-9025",
+   "juego": "Super Street Fighter II X",
+   "p1": "H-Zero",
+   "p2": "marvil",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Ken",
+   "p2pj": "E.Honda",
+   "ft": "FT5",
+   "dur": 823,
+   "yt": "zB8J7PdMZ_U",
+   "corto": "zH0v7bfF90U",
+   "subido": 1795223020
+  },
   {
    "id": "1795208154762-6942",
    "juego": "Super Street Fighter II X",
