@@ -1,6 +1,23 @@
 {
- "actualizado": 1795373539,
+ "actualizado": 1795375339,
  "retas": [
+  {
+   "id": "1794891563235-1976",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "Kyokuji",
+   "p2": "RL_83",
+   "p1rango": "S",
+   "p2rango": "A",
+   "p1pais": "CA",
+   "p2pais": "MX",
+   "p1pj": "Ken",
+   "p2pj": "Urien",
+   "ft": "FT2",
+   "dur": 238,
+   "yt": "7WfRGCDR5vU",
+   "corto": "TdSQcBYN0P8",
+   "subido": 1795374869
+  },
   {
    "id": "1794813641434-8193",
    "juego": "Street Fighter III: 3rd Strike",
