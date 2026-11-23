@@ -1,6 +1,23 @@
 {
- "actualizado": 1795465338,
+ "actualizado": 1795468038,
  "retas": [
+  {
+   "id": "1795461006131-8594",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "kami no kodomo",
+   "p2": "Kaisark",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "CL",
+   "p2pais": "CL",
+   "p1pj": "Sean",
+   "p2pj": "Urien",
+   "ft": "FT5",
+   "dur": 555,
+   "yt": "YQS8shLxrv8",
+   "corto": "cj_HYTtPKbM",
+   "subido": 1795467687
+  },
   {
    "id": "1795461525016-4482",
    "juego": "Street Fighter III: 3rd Strike",
