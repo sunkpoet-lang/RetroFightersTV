@@ -1,6 +1,23 @@
 {
- "actualizado": 1795458138,
+ "actualizado": 1795463539,
  "retas": [
+  {
+   "id": "1795451818674-9330",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "sasici",
+   "p2": "Fiysek",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "TR",
+   "p2pais": "TR",
+   "p1pj": "Ryu",
+   "p2pj": "Ken",
+   "ft": "FT5",
+   "dur": 577,
+   "yt": "2nvtCQCN8TY",
+   "corto": "v3NEwYl8oY0",
+   "subido": 1795462739
+  },
   {
    "id": "1795124709756-3915",
    "juego": "Super Street Fighter II X",
