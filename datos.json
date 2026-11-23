@@ -1,6 +1,23 @@
 {
- "actualizado": 1795454542,
+ "actualizado": 1795457239,
  "retas": [
+  {
+   "id": "1795214835472-8474",
+   "juego": "Super Street Fighter II X",
+   "p1": "H-Zero",
+   "p2": "Voltech",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Sagat",
+   "p2pj": "Chun Li",
+   "ft": "FT5",
+   "dur": 606,
+   "yt": "PBE15AcRgQY",
+   "corto": "dDR6o5JLJ4I",
+   "subido": 1795456395
+  },
   {
    "id": "1795378152315-9272",
    "juego": "Super Street Fighter II X",
