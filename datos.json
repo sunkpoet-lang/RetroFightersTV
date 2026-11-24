@@ -1,6 +1,23 @@
 {
- "actualizado": 1795481541,
+ "actualizado": 1795542741,
  "retas": [
+  {
+   "id": "1795397723868-7270",
+   "juego": "Super Street Fighter II X",
+   "p1": "Street-Fightin",
+   "p2": "KELA420",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "US",
+   "p2pais": "MX",
+   "p1pj": "Ken",
+   "p2pj": "Ryu",
+   "ft": "FT5",
+   "dur": 481,
+   "yt": "U1MATYSmbPs",
+   "corto": "44Eb8sjEr7o",
+   "subido": 1795542387
+  },
   {
    "id": "1794765467940-7695",
    "juego": "Street Fighter II Champion Edition",
