@@ -1,6 +1,23 @@
 {
- "actualizado": 1795548138,
+ "actualizado": 1795550840,
  "retas": [
+  {
+   "id": "1795033862769-6462",
+   "juego": "The King of Fighters '97",
+   "p1": "LAGZERO",
+   "p2": "Churrakof (bol)",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "CL",
+   "p2pais": "BO",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT3",
+   "dur": 593,
+   "yt": "dkoiZ4dmMag",
+   "corto": "lueOcHmdN34",
+   "subido": 1795550721
+  },
   {
    "id": "1791814862578-5145",
    "juego": "Super Street Fighter II X",
