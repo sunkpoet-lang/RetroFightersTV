@@ -1,6 +1,23 @@
 {
- "actualizado": 1795550840,
+ "actualizado": 1795575139,
  "retas": [
+  {
+   "id": "1795572377889-7078",
+   "juego": "Super Street Fighter II X",
+   "p1": "_yito2k_",
+   "p2": "ProtomanX-8",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Chun Li",
+   "p2pj": "Zangief",
+   "ft": "FT5",
+   "dur": 392,
+   "yt": "ImG048Ag3Gc",
+   "corto": "mIZQbC63N-4",
+   "subido": 1795574808
+  },
   {
    "id": "1795033862769-6462",
    "juego": "The King of Fighters '97",
