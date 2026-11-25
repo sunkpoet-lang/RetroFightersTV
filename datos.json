@@ -1,6 +1,23 @@
 {
- "actualizado": 1795625539,
+ "actualizado": 1795627338,
  "retas": [
+  {
+   "id": "1795126376684-7279",
+   "juego": "Super Street Fighter II X",
+   "p1": "H-Zero",
+   "p2": "mrcarabano",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Sagat",
+   "p2pj": "Guile",
+   "ft": "FT5",
+   "dur": 697,
+   "yt": "Kh9qTUxiQmc",
+   "corto": "lJDP3aO5j84",
+   "subido": 1795626637
+  },
   {
    "id": "1795618499602-2629",
    "juego": "Street Fighter III: 3rd Strike",
