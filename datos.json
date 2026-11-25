@@ -1,6 +1,23 @@
 {
- "actualizado": 1795583238,
+ "actualizado": 1795621939,
  "retas": [
+  {
+   "id": "1795612621297-5058",
+   "juego": "Super Street Fighter II X",
+   "p1": "THE-AHO",
+   "p2": "terasaga",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "JP",
+   "p2pais": "JP",
+   "p1pj": "E.Honda",
+   "p2pj": "Sagat",
+   "ft": "FT3",
+   "dur": 478,
+   "yt": "NAdiVzWylWg",
+   "corto": "am4dYwH-tAk",
+   "subido": 1795621366
+  },
   {
    "id": "1795572446750-6094",
    "juego": "Street Fighter III: 3rd Strike",
