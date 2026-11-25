@@ -1,6 +1,23 @@
 {
- "actualizado": 1795621939,
+ "actualizado": 1795625539,
  "retas": [
+  {
+   "id": "1795618499602-2629",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "DenjinLee",
+   "p2": "BigCountryBreakfast",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "Ken",
+   "p2pj": "Hugo",
+   "ft": "FT3",
+   "dur": 633,
+   "yt": "GyGMWPK4RNQ",
+   "corto": "v4eNuJPUi_g",
+   "subido": 1795624908
+  },
   {
    "id": "1795612621297-5058",
    "juego": "Super Street Fighter II X",
