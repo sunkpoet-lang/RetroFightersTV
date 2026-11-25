@@ -1,6 +1,23 @@
 {
- "actualizado": 1795627338,
+ "actualizado": 1795630038,
  "retas": [
+  {
+   "id": "1795363419461-4230",
+   "juego": "Super Street Fighter II X",
+   "p1": "ProtomanX-8",
+   "p2": "djdode",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "US",
+   "p2pais": "US",
+   "p1pj": "Zangief",
+   "p2pj": "Chun Li",
+   "ft": "FT5",
+   "dur": 360,
+   "yt": "nbM8DaXCAAc",
+   "corto": "_6IZaXj6KMo",
+   "subido": 1795629375
+  },
   {
    "id": "1795126376684-7279",
    "juego": "Super Street Fighter II X",
