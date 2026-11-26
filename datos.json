@@ -1,6 +1,23 @@
 {
- "actualizado": 1795718238,
+ "actualizado": 1795719138,
  "retas": [
+  {
+   "id": "1795699386434-9723",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "Arcoilis",
+   "p2": "koaranoma-chi",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "JP",
+   "p2pais": "JP",
+   "p1pj": "Yun",
+   "p2pj": "Yun",
+   "ft": "FT3",
+   "dur": 730,
+   "yt": "ZQpH7F7virE",
+   "corto": "JF5H5G6W1OE",
+   "subido": 1795719105
+  },
   {
    "id": "1795699115541-2695",
    "juego": "Street Fighter III: 3rd Strike",
