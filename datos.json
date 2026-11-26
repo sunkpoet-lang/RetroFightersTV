@@ -1,6 +1,40 @@
 {
- "actualizado": 1795709239,
+ "actualizado": 1795712840,
  "retas": [
+  {
+   "id": "1795706241071-7389",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "Johnny B bad",
+   "p2": "90000",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "JP",
+   "p2pais": "JP",
+   "p1pj": "Dudley",
+   "p2pj": "Ken",
+   "ft": "FT3",
+   "dur": 623,
+   "yt": "mq40eoJ5dR4",
+   "corto": "lLdq5JEGh8c",
+   "subido": 1795712214
+  },
+  {
+   "id": "1795704035198-5270",
+   "juego": "Super Street Fighter II X",
+   "p1": "benda",
+   "p2": "Revolution98",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "JP",
+   "p2pais": "JP",
+   "p1pj": "E.Honda",
+   "p2pj": "Chun Li",
+   "ft": "FT5",
+   "dur": 538,
+   "yt": "yZDYhwvPlBQ",
+   "corto": "VFtbHbbFtM4",
+   "subido": 1795712153
+  },
   {
    "id": "1795649590152-8724",
    "juego": "Super Street Fighter II X",
