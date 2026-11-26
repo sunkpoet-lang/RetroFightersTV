@@ -1,6 +1,23 @@
 {
- "actualizado": 1795630938,
+ "actualizado": 1795709239,
  "retas": [
+  {
+   "id": "1795649590152-8724",
+   "juego": "Super Street Fighter II X",
+   "p1": "ThebossRD",
+   "p2": "ZakMrak",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "DO",
+   "p2pais": "US",
+   "p1pj": "Balrog (Boxer)",
+   "p2pj": "Guile",
+   "ft": "FT5",
+   "dur": 742,
+   "yt": "GpXgrGlNgl4",
+   "corto": "qzIwfKSp_jw",
+   "subido": 1795708782
+  },
   {
    "id": "1795621166081-5748",
    "juego": "Street Fighter II Champion Edition",
