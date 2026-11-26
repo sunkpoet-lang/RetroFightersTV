@@ -1,6 +1,23 @@
 {
- "actualizado": 1795726339,
+ "actualizado": 1795729938,
  "retas": [
+  {
+   "id": "1793468065566-1247",
+   "juego": "Street Fighter II Champion Edition",
+   "p1": "DJILK",
+   "p2": "ROSEFORP",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "US",
+   "p2pais": "TR",
+   "p1pj": "Ryu",
+   "p2pj": "Guile",
+   "ft": "FT5",
+   "dur": 614,
+   "yt": "g7dnIZxQqaU",
+   "corto": "39NHd304ZFc",
+   "subido": 1795729243
+  },
   {
    "id": "1795481295436-4663",
    "juego": "Super Street Fighter II X",
