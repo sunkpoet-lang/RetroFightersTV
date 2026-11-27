@@ -1,6 +1,23 @@
 {
- "actualizado": 1795729938,
+ "actualizado": 1795796539,
  "retas": [
+  {
+   "id": "1795741168035-4359",
+   "juego": "Super Street Fighter II X",
+   "p1": "H-Zero",
+   "p2": "Voltech",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Vega (Claw)",
+   "p2pj": "Chun Li",
+   "ft": "FT5",
+   "dur": 560,
+   "yt": "_XhEnncaOVM",
+   "corto": "usiakAqpX8Q",
+   "subido": 1795796527
+  },
   {
    "id": "1793468065566-1247",
    "juego": "Street Fighter II Champion Edition",
