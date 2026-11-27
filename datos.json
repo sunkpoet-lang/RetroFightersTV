@@ -1,6 +1,40 @@
 {
- "actualizado": 1795816338,
+ "actualizado": 1795819041,
  "retas": [
+  {
+   "id": "1795681548336-3889",
+   "juego": "The King of Fighters '95",
+   "p1": "paaraang",
+   "p2": "Sex demon",
+   "p1rango": "B",
+   "p2rango": "B",
+   "p1pais": "KR",
+   "p2pais": "CN",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 658,
+   "yt": "_shiEYg6TFc",
+   "corto": "jNbOFO-vHFQ",
+   "subido": 1795818395
+  },
+  {
+   "id": "1795320365247-5745",
+   "juego": "Ultimate Mortal Kombat 3",
+   "p1": "Piero-",
+   "p2": "FORR",
+   "p1rango": "A",
+   "p2rango": "A",
+   "p1pais": "PE",
+   "p2pais": "US",
+   "p1pj": "",
+   "p2pj": "",
+   "ft": "FT5",
+   "dur": 1060,
+   "yt": "9og-CmOPxLU",
+   "corto": "p4NX1rkU-7E",
+   "subido": 1795818337
+  },
   {
    "id": "1771338632963-8613",
    "juego": "Street Fighter III: 3rd Strike",
