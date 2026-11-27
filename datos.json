@@ -1,6 +1,23 @@
 {
- "actualizado": 1795808238,
+ "actualizado": 1795810038,
  "retas": [
+  {
+   "id": "1795803573276-1401",
+   "juego": "Street Fighter III: 3rd Strike",
+   "p1": "#blessed",
+   "p2": "SM_Hakase",
+   "p1rango": "B",
+   "p2rango": "A",
+   "p1pais": "US",
+   "p2pais": "MX",
+   "p1pj": "Alex",
+   "p2pj": "Ken",
+   "ft": "FT3",
+   "dur": 529,
+   "yt": "Jpy7V9POhPg",
+   "corto": "oAVAIaWR9LE",
+   "subido": 1795809426
+  },
   {
    "id": "1795454770185-5125",
    "juego": "Street Fighter II Champion Edition",
