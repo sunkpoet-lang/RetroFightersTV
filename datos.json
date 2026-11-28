@@ -1,6 +1,23 @@
 {
- "actualizado": 1795819041,
+ "actualizado": 1795840641,
  "retas": [
+  {
+   "id": "1795732662848-6616",
+   "juego": "Super Street Fighter II X",
+   "p1": "H-Zero",
+   "p2": "Grapplerbobby",
+   "p1rango": "A",
+   "p2rango": "B",
+   "p1pais": "MX",
+   "p2pais": "US",
+   "p1pj": "Ken",
+   "p2pj": "Balrog (Boxer)",
+   "ft": "FT5",
+   "dur": 737,
+   "yt": "JQtr6mlHB7c",
+   "corto": "Hr75-J6LsW4",
+   "subido": 1795840464
+  },
   {
    "id": "1795681548336-3889",
    "juego": "The King of Fighters '95",
